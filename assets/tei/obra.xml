@@ -1,32 +1,619 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_simplePrint.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Elisa o los corazones solitarios</title>
-            <author>Soledad Acosta de Samper</author>
-            <date>1876</date>
-            <editor>Juan Ricardo Molina Rúa</editor>
-            <editor>Cristian Suárez-Giraldo</editor>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
-         <bibl>
-         <pubPlace></pubPlace>
-         <publisher></publisher>
-         <date></date>
-         </bibl>
-         </sourceDesc>
-      </fileDesc>
-  </teiHeader>
-  <text>
-      <body>
-         <div>
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title type="main">Elisa o los corazones solitarios</title>
+      <title type="sub">Novela sicológica</title>
+      <author>Soledad Acosta de Samper</author>
 
-</div>
-      </body>
+      <respStmt xml:id="autora">
+        <resp>Autora del manuscrito</resp>
+        <name>Soledad Acosta de Samper</name>
+      </respStmt>
+      <respStmt xml:id="editor">
+        <resp>Transcripción, codificación TEI y edición digital</resp>
+        <name>Juan Ricardo Molina Rúa</name>
+      </respStmt>
+      <respStmt xml:id="editor2">
+        <resp>Transcripción, codificación TEI y edición digital</resp>
+        <name>Cristian Suárez-Giraldo</name>
+      </respStmt>
+    </titleStmt>
+
+    <publicationStmt>
+      <publisher>Clase de Humanidades Digitales</publisher>
+      <pubPlace>Colombia</pubPlace>
+      <date when="2026">2026</date>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/">
+          Distribuido bajo licencia Creative Commons Atribución 4.0
+          Internacional (CC-BY 4.0).
+        </licence>
+      </availability>
+    </publicationStmt>
+
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <country>Colombia</country>
+          <institution>Instituto Caro y Cuervo</institution>
+          <repository>Fondo Soledad Acosta de Samper</repository>
+          <idno type="signatura">FSAS012</idno>
+        </msIdentifier>
+        <msContents>
+          <summary>
+            Manuscrito autógrafo de <title>Elisa o los corazones
+            solitarios (novela sicológica)</title>, firmado bajo el
+            seudónimo "Aldebarán".
+          </summary>
+        </msContents>
+        <physDesc>
+          <objectDesc>
+            <supportDesc>
+              <support>Cuaderno manuscrito en tinta púrpura.</support>
+            </supportDesc>
+          </objectDesc>
+        </physDesc>
+        <history>
+          <origin>
+            <origDate when="1876">1876</origDate>
+            <origPlace>Colombia</origPlace>
+          </origin>
+        </history>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+
+  <encodingDesc>
+    <projectDesc>
+      <p>
+        Edición digital mínima del manuscrito de <title>Elisa o los
+        corazones solitarios</title>, desarrollada bajo principios de
+        <term>minimal computing</term>, con publicación en sitio
+        estático (Jekyll + GitHub Pages) y codificación XML-TEI como
+        formato base, siguiendo un flujo de trabajo que integra
+        reconocimiento de escritura manuscrita (HTR), codificación
+        estructural/semántica y publicación de doble salida de lectura.
+      </p>
+    </projectDesc>
+
+    <editorialDecl>
+      <p>
+        La transcripción inicial se generó mediante reconocimiento de
+        escritura manuscrita (HTR) en la plataforma Transkribus, con
+        revisión y corrección filológica posterior.
+      </p>
+      <p>
+        Las intervenciones editoriales se codifican mediante el
+        elemento <gi>choice</gi>, anidando <gi>orig</gi>/<gi>reg</gi>
+        para normalizaciones ortográficas y de puntuación de época,
+        <gi>abbr</gi>/<gi>expan</gi> para abreviaturas, y
+        <gi>sic</gi>/<gi>corr</gi> para errores propios de la autora.
+      </p>
+      <p>
+        Las revisiones genéticas del manuscrito (tachaduras y
+        adiciones interlineales) se codifican mediante <gi>subst</gi>,
+        anidando <gi>del</gi> y <gi>add</gi>. El atributo
+        <att>resp</att> distingue las intervenciones de la autora
+        (<ref target="#autora">#autora</ref>) de las decisiones
+        editoriales del equipo de edición
+        (<ref target="#editor">#editor</ref>).
+      </p>
+      <p>
+        Los guiones de corte de línea se marcan con el atributo
+        <att>break</att>="no" en el elemento <gi>lb</gi> que sigue a
+        la palabra partida, permitiendo reconstruir la palabra completa
+        en la vista de lectura regularizada sin alterar la fuente
+        diplomática.
+      </p>
+      <p>
+        La incertidumbre de lectura se marca con <gi>unclear</gi> y
+        el atributo <att>cert</att> (alto/medio/bajo); las pérdidas
+        materiales del soporte (rotos, manchas de tinta) se marcan
+        con <gi>gap</gi>.
+      </p>
+      <p>
+        El documento se codifica en una única fuente XML-TEI de la
+        cual se derivan dos vistas de lectura: una diplomática, fiel
+        a la disposición física y las capas de revisión del
+        manuscrito, y una regularizada, que resuelve ortografía,
+        puntuación y correcciones a una lectura corrida moderna.
+      </p>
+    </editorialDecl>
+
+    <appInfo>
+      <application ident="CETEIcean" version="2">
+        <label>CETEIcean</label>
+      </application>
+    </appInfo>
+  </encodingDesc>
+
+  <profileDesc>
+    <langUsage>
+      <language ident="es">Español (siglo XIX, Colombia)</language>
+      <language ident="fr">Francés (epígrafe)</language>
+    </langUsage>
+  </profileDesc>
+
+  <revisionDesc>
+    <change when="2026-07-05" who="#editor">
+      Primera codificación estructural del capítulo introductorio.
+    </change>
+  </revisionDesc>
+</teiHeader>
+ 
+
+<text>
+      <body>
+        <div>
+
+<epigraph>
+    <cit>
+      <quote xml:lang="fr">Savons nous ce que c'est que le bonheur d'une foi
+      fervente? Heureux cent fois, mille fois heureux l'homme qui croit et
+      qui aime! Pour celui-là, tout est beau et doré.</quote>
+      <bibl>Alfred de Vigny</bibl>
+    </cit>
+  </epigraph>
+
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+
+<pb n='4'/>
+
+<fw type="pageNum" subtype="autor">1</fw>
+<fw type="pageNum" subtype="biblioteca">03</fw>
+
+ <div type="introduction">
+    <head>Introducción</head>
+    <div type="chapter" n="1">
+      <head>I</head>
+
+<p>
+    <lb n='N003'/>Por una de aquellas curiosidad que pare-
+    <lb n='N004' break="no"/>cen verdaderamente tener algo de providencia-
+    <lb n='N006'/>les, sucediome
+                <subst>
+                    <del>hara unos tres o cuatro años</del>
+    <lb n='N005' break="no"/><add place='above'>al salir de la universidad de Paris, en donde me eduqué</add>
+</subst>
+
+    <lb n='N007'/>una singularísima aventura.
+</p>
+<p>
+  <lb n="N009"/><choice><orig>Habia</orig><reg>Había</reg></choice>
+  <subst>
+  <del>sido comisionado por</del>
+  <lb n="N008"/><add place="above">obtenido, para probar mis conocimientos que</add>
+</subst> una socie-
+
+<lb n="N011" break="no"/>dad de sabios europeos
+<subst>
+  <del>; que</del>
+  <lb n="N010"/><add place="above">me <choice><orig>confiaran</orig><reg>confiara</reg></choice> una misión detallada. Dicha sociedad</add>
+</subst> necesitaba<del>n</del> ciertos
+
+<lb n="N013"/>datos estadísticos, <subst>
+  <del>que recoriese varios pun-
+    <lb n="N016" break="no"/>tos de las Antillas,</del>
+  <add place="above">
+    <lb n="N012"/>para lo cual <choice><orig>deberia</orig><reg>debería</reg></choice> visitar las islas <choice><orig>jonicas</orig><reg>Jónicas</reg></choice>
+  </add>
+</subst> tanto <add place="inline">las</add> Grandes como peque-
+    <lb n="N017" break="no"/>ñas, y tomase en ellas ciertas noticias importantes.
+    <lb n='N018'/>Cuando llegué a una de las más pequeñas
+    <lb n='N019'/>de uno de los grupos de estas islas (cuyo nombre
+    <lb n='N020'/>callaré por prudencia) acababa de pasar la
+    <lb n='N021'/>estación de lluvias y la naturaleza ente-
+    <lb n='N022' break="no"/>ra ostentaba una riqueza de colores y ma-
+    <lb n='N023'/>tices de <choice><sic>lo</sic><corr resp="#editor">la</corr></choice> cual no se tiene idea en el viejo
+    <lb n='N024'/>mundo. Allí, aunque la vegetación es más
+    <lb n='N025'/>armónica y más civilizada, por decirlo a-
+    <lb n='N026' break="no"/>sí, hasta en los sitios más agrestes<choice><sic>;</sic><corr resp="#editor">,</corr></choice> carece
+    <lb n='N027'/>siempre de aquellos contrastes violentos y
+    <lb n='N028'/>exhuberancia de vida y movimiento que
+    <lb n='N029'/>encanta en el paisaje tropical.
+    <lb n='N030'/>Después de haber recorrido la isla en mu-
+    <lb n='N031' break="no"/>chas direcciones<choice><sic></sic><corr resp="#editor">,</corr></choice> noté que me faltaba visitar
+</p>
+<p>
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+</p>
+<pb n='5'/>
+<p>
+<fw type="pageNum" subtype="autor">2</fw>
+<fw type="pageNum" subtype="biblioteca">04</fw>
+</p>
+<p>
+<lb n='N001'/>una parte que parecía particularmente acciden-
+<lb n='N002' break="no"/>tada y bella. <choice><orig>Dijeronme</orig><reg>Dijéronme</reg></choice> entonces que todo aquel
+<lb n='N003'/>terreno era propiedad de un extranjero que se
+<lb n='N004'/><choice><orig>habia</orig><reg>había</reg></choice> propuesto fundar allí un establecimien-
+<lb n='N005' break="no"/>to <choice><orig>agricola</orig><reg>agrícola</reg></choice> modelo, pero que no <choice><orig>permitia</orig><reg>permitía</reg></choice> que
+<lb n='N006'/>nadie visitase su casa de habitación<choice><sic></sic><corr resp="#editor">,</corr></choice> y a pocas
+<lb n='N007'/>personas les era dado recorrer sus plantaciones
+<lb n='N008'/>salvo <choice><orig>á</orig><reg>a</reg></choice> los artesanos y trabajadores que necesita-
+<lb n='N009'/>ba para sus labores.
+<lb n='N010'/>Naturalmente<supplied reason="omitted" resp="#editor">,</supplied> aquella prohibición despertó
+<lb n='N011'/>en mí una gran curiosidad que quise satisfa-
+<lb n='N012' break="no"/>cer <choice><orig>á</orig><reg>a</reg></choice> todo trance<choice><sic>,</sic><corr resp="#editor"/></choice> y, una mañana
+<lb n='N013' break="no"/>tes del señalado para mi partida de la isla,
+<lb n='N014'/>emprendí viaje <choice><orig>sólo</orig><reg>solo</reg></choice> hacia aquel <choice><orig>jardin</orig><reg>jardín</reg></choice> de las
+<lb n='N015'/><placeName wikiData='Q165938' placeName='Jardín de las Hespérides'>Hespérides</placeName>
+<lb n='N016'/>La mañana se anunciaba bellísima, el calor
+<lb n='N017'/>que se siente <choice><orig>á</orig><reg>a</reg></choice> toda hora en aquellos climas y en
+<lb n='N018'/>el nivel del mar<choice><sic>,</sic><corr resp="#editor"/></choice> fue <choice><orig>desminuyendo</orig><reg>disminuyendo</reg></choice> a medida
+<lb n='N019'/>que me internaba por un camino sombreado
+<lb n='N020'/>que se elevaba poco <choice><orig>á</orig><reg>a</reg></choice> poco hacia el cerro que
+<lb n='N021'/>me <choice><orig>habia</orig><reg>había</reg></choice> llamado la atención y que era la
+<lb n='N022'/>propiedad del extranjero.
+
+
+<lb n='N023'/>Yo no llevaba más carta de introducción
+<lb n='N024'/>que mi escopeta de cazador y había dejado <choice><orig>á</orig><reg>a</reg></choice>
+<lb n='N025'/>la suerte que me proporcionase la oportunidad de
+<lb n='N026'/>acercarme que ansiaba.
+
+<!--REVISAAAAAAAAAAAAAAR-->
+</p>
+<p>
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+</p>
+<pb n='6'/>
+<p>
+<lb n='N001'/>3
+<lb n='N002'/>05
+</p>
+<p>
+<lb n='N001'/>Efectivamente, tal como me lo habían a-
+<lb n='N002'/>nunciado, encontré que el camino al llegar
+<lb n='N003'/>á la hacienda estaba guardado por una puer-
+<lb n='N004'/>la cerrada con llave que impedia el paso,
+<lb n='N005'/>y á uno y otro lado tenía cual trincheras na-
+<lb n='N006'/>turales, una cerca formada por monte espe-
+<lb n='N007'/>ro y espinos que parecía enteramente impene-
+<lb n='N008'/>trable. Pero <del>me</del>  tenía formado el propósito
+<lb n='N009'/>de no dejarme burlar por ninguna barrera, y
+<lb n='N010'/>asi, estas mismas me incitaban a continuar
+<lb n='N011'/>en mi determinación.
+<lb n='N012'/>Sabiendo que aquella isla tenía el pri-
+<lb n='N013'/>vilegio de carecer enteramente de serpientes ve-
+<lb n='N014'/>nenosas y otros aninales nocivos me metí
+<lb n='N015'/>por en medio del monte y la hojarazca, y
+<lb n='N016'/>á riesgo de encontrar trampas, simas y pre-
+<lb n='N017'/>estricios, me <hi rend='underline'>interné</hi> por él, persuadido que en
+<lb n='N018'/>breve encontraria menos dificultades. No me
+<lb n='N019'/>había equivocado: á medida que <hi rend='underline'>penetra</hi>-
+<lb n='N020'/>ba por el bosque<add place='inline'>,</add> este se hizo ménos agreste
+<lb n='N021'/>y a pocas cuadras de distancia, después de
+<lb n='N022'/>haber saltado por encima de algunas rocas,
+<lb n='N023'/>me hallé en un sitio tan bello y delicioso
+<lb n='N024'/>que olvidé hasta el objeto de mi excursión
+<lb n='N025'/>para contemplar aquel paisaje ideal.
+</p>
+<p>
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+
+</p>
+<pb n='7'/>
+<p>
+<lb n='N001'/>04
+<lb n='N002'/>06
+</p>
+<p>
+<lb n='N001'/>Bajo una techumbre de árboles entrelazados
+<lb n='N002'/>bajaba salteador y espumoso, un riachuelo que
+<lb n='N003'/>corria por entre un lecho de rocas superpuertas y
+<lb n='N004'/>menudos quijarros. Entre las rocas que quedaban
+<lb n='N005'/>descubiertas y fuera del agua se habían forma-
+<lb n='N006'/>do algunas islillas entapizadas de muzgos y her-
+<lb n='N007'/>mosas plantas de anchas hojas y brillantes flores.
+<lb n='N008'/>Los árboles y arbustos que crecian en la orilla
+<lb n='N009'/>del riachuelo estaban cubiertos de flores y de pa-
+<lb n='N010'/>rásitas que enredaban por los troncos formando
+<lb n='N011'/>un mar de verdura, en medio de los cuales can-
+<lb n='N012'/>taban suavemente muchas aves de plumajes varios
+<lb n='N013'/>y corrian y volaban mil especies de insectos y reptiles,
+<lb n='N014'/>que daban vida y animación al paisaje y con
+<lb n='N015'/>su voz y su murmullo acompañaban el rumor
+<lb n='N016'/>del agua chispeadara y espumosa.
+<lb n='N017'/>Un estrecho sendero se dirigia hacia la ribe-
+<lb n='N018'/>ra del riachuelo, y parándolo por encina de las ro-
+<lb n='N019'/>cas me dirigi al otro lado en donde <del>habían forma</del>
+<lb n='N020'/><del>do un místico cervados en <unclear>donde me</unclear></del> sente á des-
+<lb n='N021'/><add place='above'>de mi carriel</add>
+<lb n='N022'/>cansar. Sacando en seguida de <hi rend='subscript:true;'>x</hi> algún ligero refrijerio
+<lb n='N023'/>que había llevado para almorzar, pasé allí las
+<lb n='N024'/>horas mas ardientes del dia como en sueños, en-
+<lb n='N025'/>cantado con el espectáculo que tenia delante y ca-
+<lb n='N026'/>si olvidando el objeto de mi excursión.
+<lb n='N027'/>Sin embargo cuando note que se llegaba la tarde
+</p>
+<p>
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+
+</p>
+<pb n='8'/>
+<p>
+<lb n='N001'/><unclear>07</unclear>
+</p>
+<p>
+<lb n='N001'/>me puse de pié y volví á emprender camino si-
+<lb n='N002'/>guiendo el sendero que tenía delante, el que
+<lb n='N003'/>inferí debería conducir a alguna habitación
+<lb n='N004'/>y para seguir adelante mi papel de cazador
+<lb n='N005'/>extraviado que pensaba representar a mi lle-
+<lb n='N006'/>gada á la casa vedada, maté uno ó dos
+<lb n='N007'/><sic correction='pájaros'>pajaros</sic> de los que revoloteaban en torno mío.
+<lb n='N008'/>Habría caminado unas dos horas sin des-
+<lb n='N009'/>cansar por la vereda que se hacia más y
+<lb n='N010'/>mas escabroza cuando empece á sentirme su-
+<lb n='N011'/>mamente fatigado. Sea que hubiese perdido
+<lb n='N012'/>la costumbre de caminar en aquellos climas
+<lb n='N013'/>enervadores ó sea que el poco alimento que
+<lb n='N014'/>habia tomado en todo el dia me hiciese fal-
+<lb n='N015'/>ta, lo cierto es que ya casi no podía dar paso.
+<lb n='N016'/>Ademas pensaba con sumo disgusto que la
+<lb n='N017'/>tarde habia avanzado mucho y que pronto
+<lb n='N018'/>cerraría la noche sin haber encontrado <del>nin-</del>
+<lb n='N019'/><del>g</del>una habitación. <del>y</del> Aun llegué a sospechar
+<lb n='N020'/>que era probable que la historia del mis-
+<lb n='N021'/>terioso extranjero sería alguna burla y que
+<lb n='N022'/>talvez ni existia siquiera la hacienda mo-
+<lb n='N023'/>delo y demas patrañas con que me habían
+<lb n='N024'/>engañado. La vereda era cada momento más
+<lb n='N025'/>escabrosa y sombria y juzgaba que debería
+<lb n='N026'/>ya de haber llegado á la cumbre del cerro
+</p>
+<p>
+<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
+
+</p>
+<pb n='9'/>
+<p>
+<lb n='N001'/><unclear>08</unclear>
+</p>
+<p>
+<lb n='N001'/>cuando repentinamente al volver un recodo del
+<lb n='N002'/>tendero me halle en un sitio que me sorpren-
+<lb n='N003'/>dió en extremo, pues de ninguna manera lo
+<lb n='N004'/>aguardaba en aquel punto.
+<lb n='N005'/>Encontrábame en la entrada de un verda-
+<lb n='N006'/>dero parque á la manera europea, salvo que las
+<lb n='N007'/>alamedas de árboles que se abrían á uno y
+<lb n='N008'/>otro lado, en un terreno limpio é igual, eran
+<lb n='N009'/>árboles frutales de toda especie y propios de
+<lb n='N010'/>los climas intertropicales. Así veia hileras de
+<lb n='N011'/>palmeras, de mangales, de limoneros y naran
+<lb n='N012'/>jos, de cidros, guayabos y mameyes, todos ellos
+<lb n='N013'/>y cada uno perfectamente podados y cuidados,
+<lb n='N014'/>así como estaba limpia y recortada la menuda
+<lb n='N015'/>yerba que <sic>crecia</sic> á sus pies. Apesar de la belle-
+<lb n='N016'/>za del sitio y las señales de cultivo que respira
+<lb n='N017'/>ba<del>n</del> aquel lugar reinaba en él un profundo y
+<lb n='N018'/>á mi parecer <del>un</del> melancólico silencio, como si
+<lb n='N019'/>todo aquello se dirigiera más a los sentidos que
+<lb n='N020'/>á el alma.
+<lb n='N021'/>Tomé por la alámeda que me pareció mas
+<lb n='N022'/>que
+<lb n='N023'/>ancha y más recta, La inferí <del>que</del> debería de con
+<lb n='N024'/>ducir á la habitacion, y como me devorase la sed,
+<lb n='N025'/>pues no habia vuelto a encontrar agua desde que
+<lb n='N026'/>había dejado la orilla del riachuelo, púseme a comer
+<lb n='N027'/>de las frutas que lucian maduras entre las ramas
+</p>
+<pb n='10'/>
+<p>
+<lb n='N001'/>09
+</p>
+<p>
+<lb n='N001'/>de los árboles. En breve llegue al fin de la ala-
+<lb n='N002'/>meda y me encontré frente a una casa que
+<lb n='N003'/>me pareció ser la habitación de alguna prin-
+<lb n='N004'/>ceza de las hadas ó la mansión sonada de
+<lb n='N005'/>un poeta.
+<lb n='N006'/>La casa tenia la forma fantástica de un
+<lb n='N007'/><hi rend='underlined:true;'>chalet</hi> suizo, pero constaba de un solo piso.
+<lb n='N008'/>La parte superior era de madera bruñida y
+<lb n='N009'/>encima del tejado inclinado <sic>veianse</sic> cajones
+<lb n='N010'/>llenos de plantas y de artustos floridos. Una
+<lb n='N011'/>ancha <sic>galeria</sic> la rodeaba por todos lados, cu-
+<lb n='N012'/>yas varandas estaban cubiertas por entero de
+<lb n='N013'/>rosas y otras enredaderas que <del>form</del> colgaban
+<lb n='N014'/>formando un espeso y fresquísimo cortinaje.
+<lb n='N015'/>Varios anchos escalones de mármol comunica-
+<lb n='N016'/>ban el parque con la <sic>galería</sic>.
+<lb n='N017'/>La cara estaba tan quieta y silenciosa
+<lb n='N018'/>como el parque y el borque,<del> y</del> y tal pareciome
+<lb n='N019'/>ser el palacio de la <persName wikiData='Q11824'>Bella durmiente</persName>. Asi
+<lb n='N020'/>no pensé siquiera en golpear sino que su-
+<lb n='N021'/>bí las gradas de mármol, atravesé la gale-
+<lb n='N022'/>ria y me derigí hacia la puerta más in-
+<lb n='N023'/>mediata. Era esta la de un saloncito primo-
+<lb n='N024'/>rosamente amueblado con asientos de madera es
+<lb n='N025'/><add place='above'>asientos de porcelana de la China,</add>
+<lb n='N026'/>culpida y fresca paja. En la mitad se veia una
+<lb n='N027'/>mesa redonda de madera <add place='underline'>igualmente</add> esculpida y en torno
+</p>
+<pb n='11'/>
+<p>
+<lb n='N001'/>mesas, armarios y consolas cubiertas de objetos de
+<lb n='N002'/><del>den</del>
+<lb n='N003'/>arte y toda especie de curiosidades, y <hi rend='subscript:true;'>x</hi> las paredes,
+<lb n='N004'/><del>con</del>
+<lb n='N005'/><del>cubiertas de</del> muchos paisajes hechos al oleo, a
+<lb n='N006'/>la aguada y con tinta de china, reconociendo
+<lb n='N007'/>en un cuadro al frente el riachuelo que tanto
+<lb n='N008'/>me había llamado la atención por la maña-
+<lb n='N009'/>na.
+<lb n='N010'/>Comprendiendo entonces mi imprudencia quise
+<lb n='N011'/>devolverme para hacer algún ruido en la ga-
+<lb n='N012'/>leria exterior, temiendo que el dueño de aque-
+<lb n='N013'/>lla casa encantadora me tomase por un la-
+<lb n='N014'/>dron ó por lo menos por un entruso mal educa-
+<lb n='N015'/>do si me encontraba allí sin haber llamado á
+<lb n='N016'/>la puerta.
+<lb n='N017'/>Quise devolverme y no pude, pues aun ha-
+<lb n='N018'/>bia algo que me sorprendiese y admirase mas
+<lb n='N019'/>que todo: era que habiendo tornado los ojos ha-
+<lb n='N020'/>cia un aposento vecino ví un espectaculo que me
+<lb n='N021'/>llamó la atención al principio y me dejó en se-
+<lb n='N022'/>guida maravillado. Era la estancia vecina más
+<lb n='N023'/><add place='above'>me hallaba,</add>
+<lb n='N024'/>grande que el saloncito en que <del>estaba</del> me hallaba, y estaba
+<lb n='N025'/>completamente circundada de estantes de libros
+<lb n='N026'/>desde el lecho hasta el suelo, y como <del>fuese</del> estuvie-
+<lb n='N027'/>se en una esquina de la casa tenia dos puer-
+<lb n='N028'/>tas una que caia sobre el parque y otra que mi-
+<lb n='N029'/>caba hacia lo lejos sobre un paisaje tan bello
+</p>
+<pb n='12'/>
+<p>
+<lb n='N001'/>como jamás habia visto antes ni lo habia conocido.
+<lb n='N002'/><del>por aquel lado</del> El cerro sobre el cual esta-
+<lb n='N003'/>ba edificada la casa se levantaba abrupto
+<lb n='N004'/>teniendo al pie un bosque espeso que se pro-
+<lb n='N005'/>longaba casi hasta la orilla del mar (que
+<lb n='N006'/>estaba cerca por aquel lado) en donde hu-
+<lb n='N007'/>bieran impedido la vista del agua dos cerros
+<lb n='N008'/>altos que allí estaban como <sic correction='centinelas'>sentinelas</sic>, si es
+<lb n='N009'/>tos, como en una decoración de opera, no
+<lb n='N010'/><del>se</del> hubieran dejado entre si un ancho cam-
+<lb n='N011'/>po por entre el cual la vesta se arroja-
+<lb n='N012'/>ba en el mar que reproducia en aquel
+<lb n='N013'/>momento el <del>cielo teñido de oro y de zafiro</del>
+<lb n='N014'/>hermoso cielo tropical <del>de la tarde</del>; teñido por
+<lb n='N015'/>los rayos del sol poniente con anchas fran
+<lb n='N016'/>jás de oro y de zafiro.... Pero esta vista no
+<lb n='N017'/>fué la que más me sorprendió, sino la de
+<lb n='N018'/>una mujer que se hallaba en el aposen
+<lb n='N019'/>to, sentada delante de una mesa cubierta
+<lb n='N020'/>de toda clase de utiles de dibujo, la que
+<lb n='N021'/>inclinada sobre el espaldar de su silla,
+<lb n='N022'/>con las manos caídas sobre su regazo con-
+<lb n='N023'/>templaba arrobada el lejano paisaje que
+<lb n='N024'/>me habiá llamado la atención con un
+<lb n='N025'/>aire de tan profunda tristeza y casi de de-
+<lb n='N026'/>sesperación que se me apretó el corazón al
+</p>
+<pb n='13'/>
+<p>
+<lb n='N001'/>mirarla como si hubiese comprendido y leido
+<lb n='N002'/>en su aspecto nomás el dolor incognito, el profun-
+<lb n='N003'/>do desaliento de aquella alma encerrada en ese cuerpo.
+<lb n='N004'/>Sus grandes ojos parecían fijarse en la mar y en
+<lb n='N005'/>las blancas velas de un navio que paraba en a-
+<lb n='N006'/>quel momento entre los cerros de que hable arriba.
+<lb n='N007'/>La mujer no era joven, debería de haber pasa-
+<lb n='N008'/>do el meridiano de la vida y contaria más de cua-
+<lb n='N009'/>renta años; pero lo que me causó mayor sorpresa
+<lb n='N010'/>fué la palidez mortal de su rostro, <del>y</del> la fijeza de
+<lb n='N011'/>su mirada y la inmovilidad completa en que
+<lb n='N012'/>yaciá.
+<lb n='N013'/>Viendo que aunque yo hiciera algún ruido en la
+<lb n='N014'/>vecina estancia ella no se movia, pense que tal
+<lb n='N015'/>vez seria <del>un unclear y</del> que había muerto, y dí
+<lb n='N016'/>algunos pasos hacia ella notando que el ligero
+<lb n='N017'/>viento de la tarde movia su cabellera suelta so-
+<lb n='N018'/>bre sus hombros, la que como un manto se derra-
+<lb n='N019'/>maba en torno de su bata de muselina blanca
+<lb n='N020'/>como una nube. A medida que me acercaba de
+<lb n='N021'/>la puerta del aposento ella parecia volver en sí;
+<lb n='N022'/>un ligero color de rosa dio anunación a sus me-
+<lb n='N023'/>jillas, se estremeció en seguida como una persona
+<lb n='N024'/>que despierta, se incorporó en su asiento y vol-
+<lb n='N025'/>iendo la mirada fijó los ojos en mí. La sospresa
+<lb n='N026'/>que tuvo fué grande; abrió los labios como para
+</p>
+<pb n='14'/>
+<p>
+<lb n='N001'/>gritar, pero se le ahogó la voz en la gar-
+<lb n='N002'/>ganta, trató de levantarse de su asiento pe-
+<lb n='N003'/>ro no pudo, y le oí decir en seguida pasan-
+<lb n='N004'/>dose la mano por los ojos y hablando en
+<lb n='N005'/>un idioma que no era el de la isla:
+<lb n='N006'/>—Hasta loca me he vuelto.... veo visiones!
+<lb n='N007'/>Yo en tanto me confundia en saludos di-
+<lb n='N008'/>ciendo con el mayor embarazo:
+<lb n='N009'/>—Señora, perdóneme <choice><expan>usted</expan><abbr>U.</abbr></choice>, excuse <choice><expan>usted</expan><abbr>U.</abbr></choice> mi entrada
+<lb n='N010'/>inoportuna.... pero soy extranjero en la isla.
+<lb n='N011'/>Me perdí.... y habiendo visto esta casa abierta
+<lb n='N012'/>me atreví a entrar.
+<lb n='N013'/>Ella me miraba sin contestar, pues no
+<lb n='N014'/>podia verme muy á las claras estando yo
+<lb n='N015'/><del>del aposento</del>
+<lb n='N016'/>en el fondo <hi rend='subscript:true;'>x</hi> y habiendo empezado ya oscu-
+<lb n='N017'/>recer con aquella prontitud que caracteriza
+<lb n='N018'/>los paises intertropicales.
+<lb n='N019'/>—Quien es <choice><expan>usted</expan><abbr>U.</abbr></choice>? y como se atreve a entrar á
+<lb n='N020'/>mi casa sin permiso? exclamó a mi espal-
+<lb n='N021'/>da una voz irritada.
+<lb n='N022'/>Yo me volví entonces y ví en la puerta del
+<lb n='N023'/>saloncito a un caballero alto, delgado, vestido
+<lb n='N024'/>de blanco de pies á cabeza y con el cabello ente-
+<lb n='N025'/>ramente cano, lo que le daba un aspecto de
+<lb n='N026'/>fantasma.
+<lb n='N027'/>Le contesté lo que había pensado decirle, aca-
+<lb n='N028'/>bando
+</p>
+<pb n='15'/>
+<p>
+<lb n='N001'/>con pedirle la hospitalidad por aquella noche,
+<lb n='N002'/>puesto que está se acercaba ya.
+<lb n='N003'/>—Caballero, contestó el amo de la casa, —diré a <choice><expan>usted</expan><abbr>U.</abbr></choice>
+<lb n='N004'/>que desde que vivo aquí nadie de fuera (sin con-
+<lb n='N005'/>tar con los sirvientes) ha pasado jamás una no-
+<lb n='N006'/>che en esta casa, no solo una noche, pero ni u-
+<lb n='N007'/>na hora del dia.... sin embargo (añadió mirando
+<lb n='N008'/>a la señora, que vuelta de su sorpresa habia sa-
+<lb n='N009'/>lido adonde estabamos) atendiendo á lo tarde de
+<lb n='N010'/>la hora en que <choice><expan>usted</expan><abbr>U.</abbr></choice> se ha presentado aquí, mi Se-
+<lb n='N011'/>nora y yo procuraremos darle hospitalidad has-
+<lb n='N012'/>la mañana.
+<lb n='N013'/>—Si la molestia es demasiado grande, —contesté
+<lb n='N014'/>yo un tanto azorado,— yo no querría ser impruden-
+<lb n='N015'/>te; y estoy listo á volverme á la ciudad ahora
+<lb n='N016'/>mismo si <choice><expan>usted</expan><abbr>U.</abbr></choice> me hace el favor de proporcionar-
+<lb n='N017'/>me un guia que me lleve al travez de la món-
+<lb n='N018'/>taña.....
+<lb n='N019'/>—Eso no, exclamó la señora interviniendo en la
+<lb n='N020'/>conversación, — eso no! No crea <choice><expan>usted</expan><abbr>U.</abbr></choice> caballero que <choice><expan>usted</expan><abbr>U.</abbr></choice>
+<lb n='N021'/>trata con salvajes y gente de mal corazón. Le ase-
+<lb n='N022'/>guro á <choice><expan>usted</expan><abbr>U.</abbr></choice> que tendrémos mucho gusto en darle a
+<lb n='N023'/><choice><expan>usted</expan><abbr>U.</abbr></choice> albergue por esta noche. Síentese <choice><expan>usted</expan><abbr>U.</abbr></choice> añadió, mi
+<lb n='N024'/>rando á su marido con una sonrisa forzada, y
+<lb n='N025'/>háblenos <choice><expan>usted</expan><abbr>U.</abbr></choice> del mundo y de lo que se dice en
+<lb n='N026'/>él de nuevo, -en tanto que sirven la comida, cuya
+</p>
+<pb n='16'/>
+<p>
+<lb n='N001'/>hora no tardará.
+<lb n='N002'/><add place='above'>pero más ó ménos</add>
+<lb n='N003'/>El caballero repitio lo que la señora decia
+<lb n='N004'/>y cuando hube presentado mi tarjeta y dicho
+<lb n='N005'/>lo que me llevaba á aquellos retirados parajes,
+<lb n='N006'/>la conversación se trató acerca de cosas in-
+<lb n='N007'/>diferentes entre la señora y yo, en tanto
+<lb n='N008'/>que el caballero parecia meditabundo y
+<lb n='N009'/>taciturno y rara vez decia algunas palabras.
+<lb n='N010'/>Ya estaba casi oscuro cuando se presen-
+<lb n='N011'/>tó un sirviente llevando luces y otro á anún-
+<lb n='N012'/>ciar que estaba servida la comida, quedan-
+<lb n='N013'/>do uno y otro sorprendidos al ver un huésped
+<lb n='N014'/>en donde jamas habian visto otro.
+<lb n='N015'/>—<persName wikiData='Q11687769'>Bernardo</persName>, dijo el Caballero dirigiendose a u-
+<lb n='N016'/>no de los sirvientes,- pón un cubierto mas en la
+<lb n='N017'/>mesa, puesto que este señor nos acompaña
+<lb n='N018'/>a comer,- y volviéndose me dijo que tuviera
+<lb n='N019'/>la bondad de darle el brazo a la Señora y
+<lb n='N020'/>conducirla al comedor; pasando él adelante
+<lb n='N021'/>para mostrarme el camino.
+</p>
+ </div>
+ </div>
+
+ </div>
+    </body>
   </text>
 </TEI>

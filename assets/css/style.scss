@@ -42,3 +42,108 @@ margin:auto;
   color:#CE5747;
   margin:8px;
 }
+
+/* --- Edición diplomática / regularizada --- */
+
+/* Anula el comportamiento por defecto de CETEIcean.css para <choice>,
+   que mostraba ambas ramas con paréntesis (ej. "Dr. (doctor)") */
+tei-choice tei-abbr + tei-expan:before,
+tei-choice tei-expan + tei-abbr:before,
+tei-choice tei-sic + tei-corr:before,
+tei-choice tei-corr + tei-sic:before,
+tei-choice tei-orig + tei-reg:before,
+tei-choice tei-reg + tei-orig:before,
+tei-choice tei-abbr + tei-expan:after,
+tei-choice tei-expan + tei-abbr:after,
+tei-choice tei-sic + tei-corr:after,
+tei-choice tei-corr + tei-sic:after,
+tei-choice tei-orig + tei-reg:after,
+tei-choice tei-reg + tei-orig:after {
+  content: none;
+}
+
+/* Botones de alternancia de modo de lectura */
+.toggle-lectura {
+  margin: 1em 0;
+}
+
+.toggle-lectura .modo-btn {
+  font-family: $main-font;
+  background: none;
+  border: 1px solid $text-color;
+  color: $text-color;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.toggle-lectura .modo-btn.activo {
+  background: $text-color;
+  color: white;
+}
+
+/* Anula las comillas automáticas de CETEIcean.css para adiciones inline;
+   una adición de la autora no debe verse marcada como cita o inserción especial */
+tei-add[place=inline]:before,
+tei-add[place=inline]:after {
+  content: none;
+}
+
+/* Por defecto, nada se marca: normalización ortográfica y revisiones
+   de la autora se muestran como texto normal (regularización "silenciosa",
+   declarada una sola vez en el editorialDecl del teiHeader) */
+
+/* Solo se marca, de forma mínima y sin color, una intervención
+   editorial EXCEPCIONAL, declarada explícitamente con resp="#editor"
+   (reservado para decisiones discutibles, no para tildes) */
+[resp="#editor"] {
+  border-bottom: 1px dotted currentColor;
+}
+
+/* --- Vista de subst (del/add) y del sueltos, ya resueltos a una sola rama --- */
+
+/* Modo diplomático: cualquier <del> mostrado (dentro de subst o suelto)
+   se ve tachado, como en el manuscrito */
+tei-del,
+.del-simple {
+  text-decoration: line-through;
+}
+
+/* Los <lb> dentro de un <del> (intentos descartados) no deben forzar
+   salto de línea visual: solo marcan la posición original en el folio */
+tei-del tei-lb:after {
+  content: "";
+}
+
+/* Modo regularizado: el <add> se ve como texto normal, sin marcas
+   (aumentamos especificidad para ganarle a la regla original de CETEIcean.css) */
+.subst-resuelto tei-add[place=above],
+.subst-resuelto tei-add {
+  vertical-align: baseline;
+  font-size: inherit;
+}
+
+/* --- Vista diplomática real: renglones físicos + doble capa (del/add) --- */
+
+/* Espacio extra entre líneas para que el texto elevado no choque
+   con el renglón de arriba */
+#TEI.modo-dipl p,
+#TEI.modo-dipl tei-p {
+  line-height: 2.6;
+}
+
+/* En diplomática sí mostramos el add elevado, como anotación interlineal */
+#TEI.modo-dipl .subst-resuelto tei-add[place=above] {
+  vertical-align: super;
+  font-size: 0.75em;
+  line-height: 1;
+}
+
+/* Número de renglón al inicio de cada línea física */
+#TEI.modo-dipl .numero-linea {
+  font-size: 0.65em;
+  color: $heading-color;
+  margin-right: 0.6em;
+  user-select: none;
+}

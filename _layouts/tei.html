@@ -4,13 +4,139 @@ layout: page
 
 {{ content }}
 
+<div class="toggle-lectura" role="group" aria-label="Modo de lectura">
+  <button type="button" id="btn-dipl" class="modo-btn">Diplomática</button>
+  <button type="button" id="btn-reg" class="modo-btn activo">Lectura regularizada</button>
+</div>
+
 <div id="TEI"></div>
 <div><a href="{{site.baseurl}}/assets/tei/{{page.document}}" target="_new">See original TEI.</a></div>
 
 <script src="{{site.baseurl}}/assets/js/CETEI.js"></script>
 <script>
-  var CETEIcean = new CETEI()
-  CETEIcean.getHTML5("{{site.baseurl}}/assets/tei/{{page.document}}", function(data) {
-    document.getElementById("TEI").appendChild(data)
-  })
+  var CETEIcean = new CETEI();
+
+  // Mapa de qué rama de <choice> se muestra según el modo de lectura
+  var MODOS = {
+    dipl: ["orig", "abbr", "sic"],
+    reg:  ["reg", "expan", "corr"]
+  };
+  var modoActual = "reg";
+
+  // Comportamiento personalizado: <choice> se resuelve a una sola rama
+  CETEIcean.addBehaviors({
+    tei: {
+      choice: function (elt) {
+        var span = document.createElement("span");
+        span.classList.add("choice-resuelto");
+        Array.from(elt.children).forEach(function (hijo) {
+          var nombre = hijo.getAttribute("data-origname");
+          if (MODOS[modoActual].includes(nombre)) {
+            span.appendChild(hijo.cloneNode(true));
+          }
+        });
+        return span;
+      },
+      // <lb break="no">: marca que la línea corta una palabra a la mitad.
+      // En regularizada, borra el guion de corte (y espacio/salto sobrante)
+      // del texto anterior, para que la palabra quede unida.
+      // En diplomática no se toca nada (se conserva el guion, fiel al folio).
+      lb: function (elt) {
+        if (modoActual === "reg") {
+          if (elt.getAttribute("break") === "no") {
+            var anterior = elt.previousSibling;
+            if (anterior && anterior.nodeType === Node.TEXT_NODE) {
+              anterior.textContent = anterior.textContent.replace(/-\s*$/, "");
+            }
+          }
+          return; // en regularizada no se muestra salto de línea
+        }
+        // Diplomática: salto de línea real + número de renglón al margen
+        var frag = document.createDocumentFragment();
+        frag.appendChild(document.createElement("br"));
+        if (elt.hasAttribute("n")) {
+          var numero = document.createElement("span");
+          numero.classList.add("numero-linea");
+          numero.textContent = elt.getAttribute("n");
+          frag.appendChild(numero);
+        }
+        if (elt.parentNode) {
+          elt.parentNode.insertBefore(frag, elt);
+        }
+      },
+      // <del> suelto, sin <subst>/<add> correspondiente (ej. una letra
+      // tachada sin reemplazo, como "necesitaba<del>n</del>").
+      // En regularizada se elimina por completo; en diplomática se tacha.
+      del: function (elt) {
+        if (modoActual === "reg") {
+          return document.createElement("span"); // vacío: borra el contenido
+        }
+        var span = document.createElement("span");
+        span.classList.add("del-simple");
+        Array.from(elt.childNodes).forEach(function (n) {
+          span.appendChild(n.cloneNode(true));
+        });
+        return span;
+      },
+      // dipl -> muestra AMBAS capas (del tachado + add elevado), como en el folio
+      // reg -> muestra solo <add> limpio, sin ningún <del> anidado
+      subst: function (elt) {
+        var span = document.createElement("span");
+        span.classList.add("subst-resuelto");
+        if (modoActual === "reg") {
+          Array.from(elt.children).forEach(function (hijo) {
+            if (hijo.getAttribute("data-origname") === "add") {
+              var clone = hijo.cloneNode(true);
+              Array.from(clone.querySelectorAll("tei-del")).forEach(function (del) {
+                del.remove();
+              });
+              span.appendChild(clone);
+            }
+          });
+        } else {
+          // Diplomática: se conservan del y add tal como están, en su orden original
+          Array.from(elt.children).forEach(function (hijo) {
+            span.appendChild(hijo.cloneNode(true));
+          });
+        }
+        return span;
+      }
+    }
+  });
+
+  CETEIcean.getHTML5("{{site.baseurl}}/assets/tei/{{page.document}}", function (data) {
+    var contenedor = document.getElementById("TEI");
+    contenedor.className = "modo-" + modoActual;
+    contenedor.appendChild(data);
+    activarToggle();
+  });
+
+  // Vuelve a pedir el XML y re-renderizar con el nuevo modo (sin recargar la página)
+  function rerenderizar() {
+    var contenedor = document.getElementById("TEI");
+    contenedor.innerHTML = "";
+    contenedor.className = "modo-" + modoActual;
+    CETEIcean.getHTML5("{{site.baseurl}}/assets/tei/{{page.document}}", function (data) {
+      contenedor.appendChild(data);
+    });
+  }
+
+  function activarToggle() {
+    var btnDipl = document.getElementById("btn-dipl");
+    var btnReg = document.getElementById("btn-reg");
+
+    btnDipl.addEventListener("click", function () {
+      modoActual = "dipl";
+      btnDipl.classList.add("activo");
+      btnReg.classList.remove("activo");
+      rerenderizar();
+    });
+
+    btnReg.addEventListener("click", function () {
+      modoActual = "reg";
+      btnReg.classList.add("activo");
+      btnDipl.classList.remove("activo");
+      rerenderizar();
+    });
+  }
 </script>
