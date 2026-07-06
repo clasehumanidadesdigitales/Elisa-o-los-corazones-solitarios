@@ -116,12 +116,14 @@ tei-del tei-lb:after {
   content: "";
 }
 
-/* Modo regularizado: el <add> se ve como texto normal, sin marcas
-   (aumentamos especificidad para ganarle a la regla original de CETEIcean.css) */
-.subst-resuelto tei-add[place=above],
-.subst-resuelto tei-add {
-  vertical-align: baseline;
-  font-size: inherit;
+/* Modo lectura: todos los <add> se muestran como texto normal */
+tei-add,
+tei-add[place=above],
+.subst-resuelto tei-add,
+.subst-resuelto tei-add[place=above] {
+  vertical-align: baseline !important;
+  font-size: inherit !important;
+  line-height: inherit;
 }
 
 /* --- Vista diplomática real: renglones físicos + doble capa (del/add) --- */
@@ -133,10 +135,11 @@ tei-del tei-lb:after {
   line-height: 2.6;
 }
 
-/* En diplomática sí mostramos el add elevado, como anotación interlineal */
+/* En la vista diplomática los añadidos interlineales se elevan */
+#TEI.modo-dipl tei-add[place=above],
 #TEI.modo-dipl .subst-resuelto tei-add[place=above] {
-  vertical-align: super;
-  font-size: 0.75em;
+  vertical-align: super !important;
+  font-size: 0.75em !important;
   line-height: 1;
 }
 
@@ -146,4 +149,17 @@ tei-del tei-lb:after {
   color: $heading-color;
   margin-right: 0.6em;
   user-select: none;
+}
+/* Sellos: nunca se ven, en ningún modo */
+tei-fw[type="stamp"] { display: none; }
+
+/* Números de página: ocultos en regularizada... */
+#TEI.modo-reg tei-fw[type="pageNum"] { display: none; }
+
+/* ...y visibles, discretos, en diplomática */
+#TEI.modo-dipl tei-fw[type="pageNum"] {
+  display: inline;
+  font-size: 0.65em;
+  color: #8B909A;
+  margin: 0 0.4em;
 }

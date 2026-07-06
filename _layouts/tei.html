@@ -4,26 +4,62 @@ layout: page
 
 {{ content }}
 
+<style>
+  #lectura { line-height:1.7; max-width:60rem; }
+  #lectura p, #lectura tei-p { margin:0 0 1.1rem; text-align:left; }
+
+  #toc-btn {
+    position:fixed; top:1rem; right:1rem; z-index:1001;
+    background:#5A2C2C; color:#fff; border:none; cursor:pointer;
+    padding:.5rem .9rem; border-radius:6px; font-size:.95rem;
+  }
+
+  #toc {
+    position:fixed; top:0; right:0; z-index:1000;
+    width:280px; max-width:80vw; height:100vh;
+    background:#fafafa; border-left:1px solid #ddd;
+    padding:3.5rem 1.25rem 1rem; overflow:auto;
+    transform:translateX(100%);
+    transition:transform .25s ease;
+    box-shadow:-4px 0 14px rgba(0,0,0,.08);
+    font-size:.95rem;
+  }
+  #toc.abierto { transform:translateX(0); }
+
+  #toc .toc-title { font-weight:bold; margin-bottom:.5rem; }
+  #toc a { text-decoration:none; display:block; padding:.2rem 0; color:#5A2C2C; }
+  #toc a:hover { text-decoration:underline; }
+  #toc .lvl-part    { font-weight:bold; margin-top:.6rem; }
+  #toc .lvl-chapter { margin-left:1.5rem; }
+
+  #toc-overlay { position:fixed; inset:0; z-index:999; background:rgba(0,0,0,.3); display:none; }
+  #toc-overlay.visible { display:block; }
+
+  tei-div[type="part"] > tei-head,
+  tei-div[type="introduction"] > tei-head { display:block; font-size:1.8em; margin:2.5rem 0 1rem; }
+  tei-div[type="chapter"] > tei-head { display:block; font-size:1.3em; margin:1.75rem 0 .5rem; }
+</style>
+
 <div class="toggle-lectura" role="group" aria-label="Modo de lectura">
   <button type="button" id="btn-dipl" class="modo-btn">Diplomática</button>
   <button type="button" id="btn-reg" class="modo-btn activo">Lectura regularizada</button>
 </div>
 
-<div id="TEI"></div>
+<button type="button" id="toc-btn">☰ Índice</button>
+<div id="toc-overlay"></div>
+
+<div id="lectura"><div id="TEI"></div></div>
+<div id="toc"></div>
+
 <div><a href="{{site.baseurl}}/assets/tei/{{page.document}}" target="_new">See original TEI.</a></div>
 
 <script src="{{site.baseurl}}/assets/js/CETEI.js"></script>
 <script>
   var CETEIcean = new CETEI();
 
-  // Mapa de qué rama de <choice> se muestra según el modo de lectura
-  var MODOS = {
-    dipl: ["orig", "abbr", "sic"],
-    reg:  ["reg", "expan", "corr"]
-  };
+  var MODOS = { dipl: ["orig","abbr","sic"], reg: ["reg","expan","corr"] };
   var modoActual = "reg";
 
-  // Comportamiento personalizado: <choice> se resuelve a una sola rama
   CETEIcean.addBehaviors({
     tei: {
       choice: function (elt) {
@@ -31,27 +67,19 @@ layout: page
         span.classList.add("choice-resuelto");
         Array.from(elt.children).forEach(function (hijo) {
           var nombre = hijo.getAttribute("data-origname");
-          if (MODOS[modoActual].includes(nombre)) {
-            span.appendChild(hijo.cloneNode(true));
-          }
+          if (MODOS[modoActual].includes(nombre)) span.appendChild(hijo.cloneNode(true));
         });
         return span;
       },
-      // <lb break="no">: marca que la línea corta una palabra a la mitad.
-      // En regularizada, borra el guion de corte (y espacio/salto sobrante)
-      // del texto anterior, para que la palabra quede unida.
-      // En diplomática no se toca nada (se conserva el guion, fiel al folio).
       lb: function (elt) {
         if (modoActual === "reg") {
           if (elt.getAttribute("break") === "no") {
             var anterior = elt.previousSibling;
-            if (anterior && anterior.nodeType === Node.TEXT_NODE) {
+            if (anterior && anterior.nodeType === Node.TEXT_NODE)
               anterior.textContent = anterior.textContent.replace(/-\s*$/, "");
-            }
           }
-          return; // en regularizada no se muestra salto de línea
+          return;
         }
-        // Diplomática: salto de línea real + número de renglón al margen
         var frag = document.createDocumentFragment();
         frag.appendChild(document.createElement("br"));
         if (elt.hasAttribute("n")) {
@@ -60,26 +88,21 @@ layout: page
           numero.textContent = elt.getAttribute("n");
           frag.appendChild(numero);
         }
-        if (elt.parentNode) {
-          elt.parentNode.insertBefore(frag, elt);
-        }
+        if (elt.parentNode) elt.parentNode.insertBefore(frag, elt);
       },
-      // <del> suelto, sin <subst>/<add> correspondiente (ej. una letra
-      // tachada sin reemplazo, como "necesitaba<del>n</del>").
-      // En regularizada se elimina por completo; en diplomática se tacha.
       del: function (elt) {
-        if (modoActual === "reg") {
-          return document.createElement("span"); // vacío: borra el contenido
-        }
+        if (modoActual === "reg") return document.createElement("span");
         var span = document.createElement("span");
         span.classList.add("del-simple");
-        Array.from(elt.childNodes).forEach(function (n) {
-          span.appendChild(n.cloneNode(true));
-        });
+        Array.from(elt.childNodes).forEach(function (n) { span.appendChild(n.cloneNode(true)); });
         return span;
       },
-      // dipl -> muestra AMBAS capas (del tachado + add elevado), como en el folio
-      // reg -> muestra solo <add> limpio, sin ningún <del> anidado
+      add: function (elt) {
+  var span = document.createElement("span");
+  span.classList.add("add-resuelto");
+  Array.from(elt.childNodes).forEach(function (n) { span.appendChild(n.cloneNode(true)); });
+  return span;
+},
       subst: function (elt) {
         var span = document.createElement("span");
         span.classList.add("subst-resuelto");
@@ -87,19 +110,20 @@ layout: page
           Array.from(elt.children).forEach(function (hijo) {
             if (hijo.getAttribute("data-origname") === "add") {
               var clone = hijo.cloneNode(true);
-              Array.from(clone.querySelectorAll("tei-del")).forEach(function (del) {
-                del.remove();
-              });
+              Array.from(clone.querySelectorAll("tei-del")).forEach(function (del) { del.remove(); });
               span.appendChild(clone);
             }
           });
         } else {
-          // Diplomática: se conservan del y add tal como están, en su orden original
-          Array.from(elt.children).forEach(function (hijo) {
-            span.appendChild(hijo.cloneNode(true));
-          });
+          Array.from(elt.children).forEach(function (hijo) { span.appendChild(hijo.cloneNode(true)); });
         }
         return span;
+        
+      },
+      metamark: function (elt) {
+        if (elt.getAttribute("function") !== "insertion") return;
+        if (modoActual === "reg") return document.createElement("span");
+        return document.createElement("span");
       }
     }
   });
@@ -108,35 +132,73 @@ layout: page
     var contenedor = document.getElementById("TEI");
     contenedor.className = "modo-" + modoActual;
     contenedor.appendChild(data);
+    buildToc(contenedor);
     activarToggle();
   });
 
-  // Vuelve a pedir el XML y re-renderizar con el nuevo modo (sin recargar la página)
   function rerenderizar() {
     var contenedor = document.getElementById("TEI");
     contenedor.innerHTML = "";
     contenedor.className = "modo-" + modoActual;
     CETEIcean.getHTML5("{{site.baseurl}}/assets/tei/{{page.document}}", function (data) {
       contenedor.appendChild(data);
+      buildToc(contenedor);
     });
+  }
+
+  function headText(el) {
+    var h = el.querySelector(":scope > tei-head");
+    if (!h) return "(sin título)";
+    var clone = h.cloneNode(true);
+    Array.from(clone.querySelectorAll(".numero-linea")).forEach(function (n) { n.remove(); });
+    return clone.textContent.trim().replace(/\s+/g, " ");
+  }
+
+  function buildToc(root) {
+    var toc = document.getElementById("toc");
+    toc.innerHTML = "";
+    var made = 0;
+    Array.from(root.querySelectorAll("tei-div")).forEach(function (div, i) {
+      var type = div.getAttribute("type");
+      if (type !== "part" && type !== "introduction" && type !== "chapter") return;
+      div.id = "sec-" + i;
+      var a = document.createElement("a");
+      a.href = "#sec-" + i;
+      a.textContent = headText(div);
+      a.className = (type === "chapter") ? "lvl-chapter" : "lvl-part";
+      toc.appendChild(a);
+      made++;
+    });
+    if (made) {
+      var t = document.createElement("div");
+      t.className = "toc-title";
+      t.textContent = "Contenido";
+      toc.insertBefore(t, toc.firstChild);
+    }
   }
 
   function activarToggle() {
     var btnDipl = document.getElementById("btn-dipl");
     var btnReg = document.getElementById("btn-reg");
-
     btnDipl.addEventListener("click", function () {
-      modoActual = "dipl";
-      btnDipl.classList.add("activo");
-      btnReg.classList.remove("activo");
-      rerenderizar();
+      modoActual = "dipl"; btnDipl.classList.add("activo"); btnReg.classList.remove("activo"); rerenderizar();
     });
-
     btnReg.addEventListener("click", function () {
-      modoActual = "reg";
-      btnReg.classList.add("activo");
-      btnDipl.classList.remove("activo");
-      rerenderizar();
+      modoActual = "reg"; btnReg.classList.add("activo"); btnDipl.classList.remove("activo"); rerenderizar();
     });
   }
+
+  // --- Abrir / cerrar el panel desplegable ---
+  (function () {
+    var btn = document.getElementById("toc-btn");
+    var toc = document.getElementById("toc");
+    var overlay = document.getElementById("toc-overlay");
+    function abrir()  { toc.classList.add("abierto"); overlay.classList.add("visible"); }
+    function cerrar() { toc.classList.remove("abierto"); overlay.classList.remove("visible"); }
+    btn.addEventListener("click", abrir);
+    overlay.addEventListener("click", cerrar);
+    toc.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") cerrar();
+    });
+  })();
 </script>
