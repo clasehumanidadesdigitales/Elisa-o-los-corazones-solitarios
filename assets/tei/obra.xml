@@ -325,164 +325,167 @@
 <p>
 <lb n='N027'/>Sin embargo cuando note que se llegaba la tarde
 
+            <note xml:id="n1" target="#muzgo1" type="gloss">
+              Variante gráfica histórica de <mentioned>musgo</mentioned>, documentada en el siglo XIX.
+            </note>
+            <fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
-<note xml:id="n1" target="#muzgo1" type="gloss">
-  Variante gráfica histórica de <mentioned>musgo</mentioned>, documentada en el siglo XIX.
-</note>
-<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
-
-<pb n='8'/>
-<p>
-<fw type="pageNum" subtype="autor">5</fw>
-<fw type="pageNum" subtype="biblioteca">07</fw>
+            <pb n='8'/>
+            <p>
+            <fw type="pageNum" subtype="autor">5</fw>
+            <fw type="pageNum" subtype="biblioteca">07</fw>
 </p>
 <p>
 <lb n='N001'/>me puse de pié y volví <choice><orig>á</orig><reg>a</reg></choice> emprender camino si-
 <lb n='N002' break="no"/>guiendo el sendero que tenía delante, el que
 <lb n='N003'/>inferí debería conducir a alguna habitación
-<lb n='N004'/>y para seguir adelante mi papel de cazador
+<lb n='N004'/>y<supplied reason="omitted" resp="#editor">,</supplied> para seguir adelante mi papel de cazador
 <lb n='N005'/>extraviado que pensaba representar a mi lle-
-<lb n='N006' break="no"/>gada <choice><orig>á</orig><reg>a</reg></choice> la casa vedada, maté uno ó dos
-<lb n='N007'/><sic correction='pájaros'>pajaros</sic> de los que revoloteaban en torno mío.
+<lb n='N006' break="no"/>gada <choice><orig>á</orig><reg>a</reg></choice> la casa vedada, maté uno <choice><orig>ó</orig><reg>o</reg></choice> dos
+<lb n='N007'/><choice><orig>pajaros</orig><reg>pájaros</reg></choice> de los que revoloteaban en torno mío.
 </p>
 <lb n='N008'/>Habría caminado unas dos horas sin des-
-<lb n='N009' break="no"/>cansar por la vereda que se hacia más y
-<lb n='N010' break="no"/>mas escabroza cuando empece <choice><orig>á</orig><reg>a</reg></choice> sentirme su-
+<lb n='N009' break="no"/>cansar por la vereda que se <choice><sic>hacia</sic><reg>hacía</reg></choice> más y
+<lb n='N010' break="no"/>más escabroza cuando empecé <choice><orig>á</orig><reg>a</reg></choice> sentirme su-
 <lb n='N011' break="no"/>mamente fatigado. Sea que hubiese perdido
 <lb n='N012'/>la costumbre de caminar en aquellos climas
-<lb n='N013'/>enervadores ó sea que el poco alimento que
-<lb n='N014'/>habia tomado en todo el dia me hiciese fal-
+<lb n='N013'/>enervadores <choice><orig>ó</orig><reg>o</reg></choice> sea que el poco alimento que
+<lb n='N014'/><choice><sic>habia</sic><reg>había</reg></choice> tomado en todo el dia me hiciese fal-
 <lb n='N015' break="no"/>ta, lo cierto es que ya casi no podía dar paso.
-<lb n='N016'/>Ademas pensaba con sumo disgusto que la
-<lb n='N017'/>tarde habia avanzado mucho y que pronto
+<lb n='N016'/><choice><sic>Ademas</sic><reg>Además</reg></choice><add place="inline" resp="#editor">,</add> pensaba con sumo disgusto que la
+<lb n='N017'/>tarde <choice><sic>habia</sic><reg>había</reg></choice> avanzado mucho y que pronto
 <lb n='N018'/>cerraría la noche sin haber encontrado <del>nin-</del>
 <lb n='N019'/><del>g</del>una habitación. <del>y</del> Aun llegué a sospechar
 <lb n='N020'/>que era probable que la historia del mis-
 <lb n='N021' break="no"/>terioso extranjero sería alguna burla y que
 <lb n='N022' break="no"/>talvez ni existia siquiera la hacienda mo-
-<lb n='N023'/>delo y demas patrañas con que me habían
+<lb n='N023'/>delo y <choice><sic>demas</sic><reg>demás</reg></choice> patrañas con que me <choice><sic>habia</sic><reg>habian</reg></choice>
 <lb n='N024'/>engañado. La vereda era cada momento más
-<lb n='N025'/>escabrosa y sombria y juzgaba que debería
+<lb n='N025'/>escabrosa y <choice><sic>sombria</sic><reg>sombria</reg></choice> y juzgaba que debería
 <lb n='N026'/>ya de haber llegado <choice><orig>á</orig><reg>a</reg></choice> la cumbre del cerro
-</p>
-<p>
-<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
-</p>
 <pb n='9'/>
-<p>
 <fw type="pageNum" subtype="autor">6</fw>
 <fw type="pageNum" subtype="biblioteca">08</fw>
-</p>
-<p>
+
 <lb n='N001'/>cuando repentinamente al volver un recodo del
 <lb n='N002'/>tendero me halle en un sitio que me sorpren-
 <lb n='N003' break="no"/>dió en extremo, pues de ninguna manera lo
 <lb n='N004'/>aguardaba en aquel punto.
+</p>
+<p>
+
 <lb n='N005'/>Encontrábame en la entrada de un verda-
 <lb n='N006' break="no"/>dero parque <choice><orig>á</orig><reg>a</reg></choice> la manera europea, salvo que las
 <lb n='N007'/>alamedas de árboles que se abrían <choice><orig>á</orig><reg>a</reg></choice> uno y
-<lb n='N008'/>otro lado, en un terreno limpio é igual, eran
+<lb n='N008'/>otro lado, en un terreno limpio <choice><sic>é</sic><reg>é</reg></choice> igual, eran
 <lb n='N009'/>árboles frutales de toda especie y propios de
 <lb n='N010'/>los climas intertropicales. Así veia hileras de
-<lb n='N011'/>palmeras, de mangales, de limoneros y naran
-<lb n='N012'/>jos, de cidros, guayabos y mameyes, todos ellos
+<lb n='N011'/>palmeras, de mangales, de limoneros y naran-
+<lb n='N012' break="no"/>jos, de cidros, guayabos y mameyes, todos ellos
 <lb n='N013'/>y cada uno perfectamente podados y cuidados,
 <lb n='N014'/>así como estaba limpia y recortada la menuda
 <lb n='N015'/>yerba que <sic>crecia</sic> <choice><orig>á</orig><reg>a</reg></choice> sus pies. Apesar de la belle-
-<lb n='N016' break="no"/>za del sitio y las señales de cultivo que respira
-<lb n='N017'/>ba<del>n</del> aquel lugar reinaba en él un profundo y
+<lb n='N016' break="no"/>za del sitio y las señales de cultivo que respira-
+<lb n='N017' break="no"/>ba<del>n</del> aquel lugar<add place="inline" resp="#editor">,</add> reinaba en él un profundo y
 <lb n='N018'/><choice><orig>á</orig><reg>a</reg></choice> mi parecer <del>un</del> melancólico silencio, como si
 <lb n='N019'/>todo aquello se dirigiera más a los sentidos que
 <lb n='N020'/><choice><sic>á el</sic><corr resp="#editor">al</corr></choice> alma.<lb n='N021'/>Tomé por la alámeda que me pareció mas
 <lb n='N022'/>que
 <lb n='N023'/>ancha y más recta, La inferí <del>que</del> debería de con
 <lb n='N024'/>ducir <choice><orig>á</orig><reg>a</reg></choice> la habitacion, y como me devorase la sed,
-<lb n='N025'/>pues no habia vuelto a encontrar agua desde que
-<lb n='N026'/>había dejado la orilla del riachuelo, púseme a comer
+<lb n='N025'/>pues no <choice><sic>habia</sic><reg>había</reg></choice> vuelto a encontrar agua desde que
+<lb n='N026'/><choice><sic>habia</sic><reg>había</reg></choice> dejado la orilla del riachuelo, púseme a comer
 <lb n='N027'/>de las frutas que lucian maduras entre las ramas
-</p>
 <pb n='10'/>
-<p>
-<fw type="pageNum" subtype="autor">4</fw>
-<fw type="pageNum" subtype="biblioteca">09</fw>
-</p>
-<p>
-<lb n='N001'/>de los árboles. En breve llegue al fin de la ala-
+  <fw type="pageNum" subtype="autor">4</fw>
+  <fw type="pageNum" subtype="biblioteca">09</fw>
+
+<lb n='N001'/>de los árboles. En breve llegué al fin de la ala-
 <lb n='N002'/>meda y me encontré frente a una casa que
 <lb n='N003'/>me pareció ser la habitación de alguna prin-
-<lb n='N004'/>ceza de las hadas ó la mansión sonada de
+<lb n='N004'/>cesa de las hadas <choice><orig>ó</orig><reg>o</reg></choice> la mansión soñada de
 <lb n='N005'/>un poeta.
+</p>
+<p>
 <lb n='N006'/>La casa tenia la forma fantástica de un
-<lb n='N007'/><hi rend='underlined:true;'>chalet</hi> suizo, pero constaba de un solo piso.
+<lb n='N007'/><hi rend='underline'>chalet</hi> suizo, pero constaba de un solo piso.
 <lb n='N008'/>La parte superior era de madera bruñida y
-<lb n='N009'/>encima del tejado inclinado <sic>veianse</sic> cajones
+<lb n='N009'/>encima del tejado inclinado veíanse cajones
 <lb n='N010'/>llenos de plantas y de artustos floridos. Una
-<lb n='N011'/>ancha <sic>galeria</sic> la rodeaba por todos lados, cu-
-<lb n='N012'/>yas varandas estaban cubiertas por entero de
+<lb n='N011'/>ancha <choice><sic>galeria</sic><reg>galería</reg></choice> la rodeaba por todos lados, cu-
+<lb n='N012' break="no"/>yas varandas estaban cubiertas por entero de
 <lb n='N013'/>rosas y otras enredaderas que <del>form</del> colgaban
 <lb n='N014'/>formando un espeso y fresquísimo cortinaje.
 <lb n='N015'/>Varios anchos escalones de mármol comunica-
-<lb n='N016'/>ban el parque con la <sic>galería</sic>.
-<lb n='N017'/>La cara estaba tan quieta y silenciosa
-<lb n='N018'/>como el parque y el borque,<del> y</del> y tal pareciome
-<lb n='N019'/>ser el palacio de la <persName wikiData='Q11824'>Bella durmiente</persName>. Asi
+<lb n='N016'/>ban el parque con la <choice><sic>galeria</sic><reg>galería</reg></choice>.
+</p>
+<p>
+<lb n='N017'/>La casa estaba tan quieta y silenciosa
+<lb n='N018'/>como el parque y el bosque,<del> y</del> y tal pareciome
+<lb n='N019'/>ser el palacio de la <persName type="fictional"><hi rend="underline">Bella durmiente</hi></persName>. Asi
 <lb n='N020'/>no pensé siquiera en golpear sino que su-
-<lb n='N021'/>bí las gradas de mármol, atravesé la gale-
+<lb n='N021' break="no"/>bí las gradas de mármol, atravesé la gale-
 <lb n='N022'/>ria y me derigí hacia la puerta más in-
-<lb n='N023'/>mediata. Era esta la de un saloncito primo-
-<lb n='N024'/>rosamente amueblado con asientos de madera es
-<lb n='N025'/><add place='above'>asientos de porcelana de la China,</add>
-<lb n='N026'/>culpida y fresca paja. En la mitad se veia una
+<lb n='N023' break="no"/>mediata. Era esta la de un saloncito primo-
+<lb n='N024' break="no"/>rosamente amueblado con asientos de madera es
+<add place="above" hand="#hand2" type="alternative">
+  asientos de porcelana de la China,
+</add>
+<lb n='N026'/>culpida y fresca paja. En la mitad se <choice><sic>veia</sic><reg>veía</reg></choice> una
 <lb n='N027'/>mesa redonda de madera <add place='underline'>igualmente</add> esculpida y en torno
-</p>
+
 <pb n='11'/>
-<p>
+
 <lb n='N001'/>mesas, armarios y consolas cubiertas de objetos de
-<lb n='N002'/><del>den</del>
-<lb n='N003'/>arte y toda especie de curiosidades, y <hi rend='subscript:true;'>x</hi> las paredes,
-<lb n='N004'/><del>con</del>
-<lb n='N005'/><del>cubiertas de</del> muchos paisajes hechos al oleo, a
-<lb n='N006'/>la aguada y con tinta de china, reconociendo
+
+<lb n='N003'/>arte y toda especie de curiosidades<del resp="#editor">,</del> y<add place="inline" resp="#editor">,</add> <add place="above">en</add> las paredes,
+<lb n='N005'/><del>cubiertas de</del> muchos paisajes hechos al <choice><sic>oleo</sic><corr resp="#editor">óleo</corr></choice>, a
+<lb n='N006'/>la aguada y con tinta de <choice><orig>china</orig><reg>China</reg></choice>, reconociendo
 <lb n='N007'/>en un cuadro al frente el riachuelo que tanto
-<lb n='N008'/>me había llamado la atención por la maña-
-<lb n='N009'/>na.
-<lb n='N010'/>Comprendiendo entonces mi imprudencia quise
-<lb n='N011'/>devolverme para hacer algún ruido en la ga-
-<lb n='N012'/>leria exterior, temiendo que el dueño de aque-
-<lb n='N013'/>lla casa encantadora me tomase por un la-
-<lb n='N014'/>dron ó por lo menos por un entruso mal educa-
-<lb n='N015'/>do si me encontraba allí sin haber llamado <choice><orig>á</orig><reg>a</reg></choice>
-<lb n='N016'/>la puerta.
-<lb n='N017'/>Quise devolverme y no pude, pues aun ha-
-<lb n='N018'/>bia algo que me sorprendiese y admirase mas
-<lb n='N019'/>que todo: era que habiendo tornado los ojos ha-
-<lb n='N020'/>cia un aposento vecino ví un espectaculo que me
-<lb n='N021'/>llamó la atención al principio y me dejó en se-
-<lb n='N022'/>guida maravillado. Era la estancia vecina más
-<lb n='N023'/><add place='above'>me hallaba,</add>
-<lb n='N024'/>grande que el saloncito en que <del>estaba</del> me hallaba, y estaba
-<lb n='N025'/>completamente circundada de estantes de libros
-<lb n='N026'/>desde el lecho hasta el suelo, y como <del>fuese</del> estuvie-
-<lb n='N027'/>se en una esquina de la casa tenia dos puer-
-<lb n='N028'/>tas una que caia sobre el parque y otra que mi-
-<lb n='N029'/>caba hacia lo lejos sobre un paisaje tan bello
+<lb n='N008'/>me <choice><sic>habia</sic><reg>había</reg></choice> llamado la atención por la maña-
+<lb n='N009' break="no"/>na.
 </p>
-<pb n='12'/>
 <p>
+<lb n='N010'/>Comprendiendo entonces mi imprudencia quise
+<lb n='N011'/>devolverme para hacer algún ruido en la <choice><orig>gale<lb n="N011" break="no"/>ria</orig>
+  <reg resp="#editor">galería</reg>
+</choice> exterior, temiendo que el dueño de aque-
+<lb n='N013'/>lla casa encantadora me tomase por un la-
+<lb n='N014' break="no"/>dron ó por lo menos por un intruso mal educa-
+<lb n='N015' break="no"/>do si me encontraba allí sin haber llamado <choice><orig>á</orig><reg>a</reg></choice>
+<lb n='N016'/>la puerta.
+</p>  
+<p>
+<lb n='N017'/>Quise devolverme y no pude, pues aun ha-
+<lb n='N018' break="no"/>bía algo que me sorprendiese y admirase mas
+<lb n='N019'/>que todo: era que habiendo tornado los ojos ha-
+<lb n='N020'/>cia un aposento vecino vi un espectaculo que me
+<lb n='N021'/>llamó la atención al principio y me dejó en se-
+<lb n='N022' break="no"/>guida maravillado. Era la estancia vecina más
+
+<lb n='N024'/>grande que el saloncito en que <subst><del>estaba</del><add place='above'>me hallaba,</add></subst>, y estaba
+<lb n='N025'/>completamente circundada de estantes de libros
+<lb n='N026'/>desde el techo hasta el suelo, y como <del>fuese</del> estuvie-
+<lb n='N027'/>se en una esquina de la casa <choice><sic>tenia</sic><reg>tenía</reg></choice> dos puer-
+<lb n='N028' break="no"/>tas<add resp="#editor">,</add> una que caia sobre el parque y otra que mi-
+<lb n='N029' break="no"/>raba hacia lo lejos sobre un paisaje tan bello
+
+<pb n='12'/>
+
 <lb n='N001'/>como jamás habia visto antes ni lo habia conocido.
 <lb n='N002'/><del>por aquel lado</del> El cerro sobre el cual esta-
-<lb n='N003'/>ba edificada la casa se levantaba abrupto
+<lb n='N003' break="no"/>ba edificada la casa se levantaba abrupto
 <lb n='N004'/>teniendo al pie un bosque espeso que se pro-
-<lb n='N005'/>longaba casi hasta la orilla del mar (que
-<lb n='N006'/>estaba cerca por aquel lado) en donde hu-
-<lb n='N007'/>bieran impedido la vista del agua dos cerros
-<lb n='N008'/>altos que allí estaban como <sic correction='centinelas'>sentinelas</sic>, si es
-<lb n='N009'/>tos, como en una decoración de opera, no
-<lb n='N010'/><del>se</del> hubieran dejado entre si un ancho cam-
-<lb n='N011'/>po por entre el cual la vesta se arroja-
-<lb n='N012'/>ba en el mar que reproducia en aquel
+<lb n='N005' break ="no"/>longaba casi hasta la orilla del mar (que
+<lb n='N006'/>estaba cerca por aquel lado)<add resp="#editor">,</add> en donde hu-
+<lb n='N007' break="no"/>bieran impedido la vista del agua dos cerros
+<lb n='N008'/>altos que allí estaban como <choice><sic>sentinelas</sic><corr>centinelas</corr></choice>, si es-
+<lb n='N009' break="no"/>tos, como en una decoración de <choice><sic>opera</sic><reg>ópera</reg></choice>, no
+<lb n='N010'/><del>se</del> hubieran dejado entre sí un ancho cam-
+<lb n='N011' break="no"/>po por entre el cual la vista se arroja-
+<lb n='N012'/>ba en el mar que <choice><orig>reproducia</orig><reg resp="#editor">reproducía</reg></choice> en aquel
 <lb n='N013'/>momento el <del>cielo teñido de oro y de zafiro</del>
 <lb n='N014'/>hermoso cielo tropical <del>de la tarde</del>; teñido por
 <lb n='N015'/>los rayos del sol poniente con anchas fran
