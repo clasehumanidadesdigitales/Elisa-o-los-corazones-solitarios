@@ -71,6 +71,32 @@ layout: page
         });
         return span;
       },
+  note: [
+  ["[target]", function (elt) {
+    const texto = elt.textContent.replace(/\s+/g, " ").trim();
+    const target = elt.getAttribute("target");
+
+    const id = target.replace(/^#/, "");
+    const objetivo = document.getElementById(id);
+
+    if (objetivo) {
+      objetivo.classList.add("nota");
+      objetivo.dataset.nota = texto;
+      objetivo.title = texto;
+
+      const tipo = elt.getAttribute("type");
+      if (tipo) {
+        objetivo.dataset.noteType = tipo;
+        objetivo.classList.add(`nota-${tipo}`);
+      }
+    }
+
+    return document.createTextNode("");
+  }],
+
+  ["_", ["(", ")"]]
+],
+
       lb: function (elt) {
         if (modoActual === "reg") {
           if (elt.getAttribute("break") === "no") {

@@ -163,3 +163,34 @@ tei-fw[type="stamp"] { display: none; }
   color: #8B909A;
   margin: 0 0.4em;
 }
+
+.nota {
+  color: #d97706;
+  cursor: help;
+  position: relative;
+  transition: color .2s;
+}
+
+.nota:hover {
+  color: #ea580c;
+}
+
+.nota:hover::after {
+  content: attr(data-nota);
+  position: absolute;
+  left: 50%;
+  top: 1.6em;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: max-content;
+  max-width: 22em;
+
+  padding: .5em .7em;
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 1.3;
+  white-space: normal;
+  font-size: .85rem;
+}

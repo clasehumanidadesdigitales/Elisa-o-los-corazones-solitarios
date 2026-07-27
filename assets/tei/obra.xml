@@ -146,9 +146,9 @@
 
 <text>
       <body>
-        <div>
-
-<epigraph>
+  
+<div>
+  <epigraph>
     <cit>
       <quote xml:lang="fr">Savons nous ce que c'est que le bonheur d'une foi
       fervente? Heureux cent fois, mille fois heureux l'homme qui croit et
@@ -156,8 +156,8 @@
       <bibl>Alfred de Vigny</bibl>
     </cit>
   </epigraph>
+</div>
 
-<fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
 <pb n='4'/>
 
@@ -193,13 +193,21 @@
   <lb n="N010"/><add place="above">me <choice><orig>confiaran</orig><reg>confiara</reg></choice> una misión detallada. Dicha sociedad</add>
 </subst> necesitaba<del>n</del> ciertos
 
-<lb n="N013"/>datos estadísticos, <subst>
-  <del>que recoriese varios pun-
-    <lb n="N016" break="no"/>tos de las Antillas,</del>
-  <add place="above">
-    <lb n="N012"/>para lo cual <choice><orig>deberia</orig><reg>debería</reg></choice> visitar las islas <choice><orig>jonicas</orig><reg>Jónicas</reg></choice>
-  </add>
-</subst> tanto <add place="inline">las</add> Grandes como peque-
+<lb n="N013"/>datos estadísticos,
+<subst>
+   <del>que recorriese varios puntos de las Antillas,</del>
+   <add place="above">
+      para lo cual debía visitar las
+      <choice>
+         <sic>islas Jónicas</sic>
+         <corr resp="#editor"><w xml:id="antillas1">Antillas</w></corr>
+      </choice>
+   </add>
+</subst> 
+<note xml:id="n23" target="#antillas1" type="textCrit">
+Se adopta la lectura «Antillas» por decisión editorial. El manuscrito presenta «Jónicas», pero el contexto («las Grandes como pequeñas») y las referencias posteriores a las Antillas indican que la sustitución quedó inconclusa.
+</note>
+tanto <add place="inline">las</add> Grandes como peque-
     <lb n="N017" break="no"/>ñas, y tomase en ellas ciertas noticias importantes.
     <lb n='N018'/>Cuando llegué a una de las más pequeñas
     <lb n='N019'/>de uno de los grupos de estas islas (cuyo nombre
@@ -232,6 +240,7 @@
 <lb n='N007'/>personas les era dado recorrer sus plantaciones
 <lb n='N008'/>salvo <choice><orig>á</orig><reg>a</reg></choice> los artesanos y trabajadores que necesita-
 <lb n='N009' break="no"/>ba para sus labores.
+</p>
 <p>
 <lb n='N010'/>Naturalmente<supplied reason="omitted" resp="#editor">,</supplied> aquella prohibición despertó
 <lb n='N011'/>en mí una gran curiosidad que quise satisfa-
@@ -251,8 +260,7 @@
 <lb n='N025'/>la suerte que me proporcionase la oportunidad de
 <lb n='N026'/>acercarme que ansiaba.
 </p>
-<!--REVISAAAAAAAAAAAAAAR-->
-</p>
+
 <fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
 <pb n='6'/>
@@ -301,7 +309,7 @@
 <lb n='N003'/><choice><orig>corria</orig><reg>corría</reg></choice> por entre un lecho de rocas superpuestas y
 <lb n='N004'/>menudos quijarros. Entre las rocas que quedaban
 <lb n='N005'/>descubiertas y fuera del agua se habían forma-
-<lb n='N006' break="no"/>do algunas islillas entapizadas de <w xml:id="muzgo1">muzgos</w> y her-
+<lb n='N006' break="no"/>do algunas islillas entapizadas de <w xml:id="muzgo1">muzgos</w><note xml:id="n1" target="#muzgo1" type="gloss"> Variante gráfica histórica de musgo, documentada en el siglo XIX.</note> y her-
 <lb n='N007' break="no"/>mosas plantas de anchas hojas y brillantes flores.
 <lb n='N008'/>Los árboles y arbustos que <choice><orig>crecian</orig><reg>crecían</reg></choice> en la orilla
 <lb n='N009'/>del riachuelo estaban cubiertos de flores y de pa-
@@ -323,20 +331,17 @@
 <lb n='N026' break="no"/>si olvidando el objeto de mi excursión.
 </p>
 <p>
-<lb n='N027'/>Sin embargo cuando note que se llegaba la tarde
+<lb n='N027'/>Sin embargo cuando noté que se llegaba la tarde
 
-            <note xml:id="n1" target="#muzgo1" type="gloss">
-              Variante gráfica histórica de <mentioned>musgo</mentioned>, documentada en el siglo XIX.
-            </note>
+            
             <fw type="stamp">© Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</fw>
 
 
             <pb n='8'/>
-            <p>
+          
             <fw type="pageNum" subtype="autor">5</fw>
             <fw type="pageNum" subtype="biblioteca">07</fw>
-</p>
-<p>
+
 <lb n='N001'/>me puse de pié y volví <choice><orig>á</orig><reg>a</reg></choice> emprender camino si-
 <lb n='N002' break="no"/>guiendo el sendero que tenía delante, el que
 <lb n='N003'/>inferí debería conducir a alguna habitación
@@ -345,16 +350,17 @@
 <lb n='N006' break="no"/>gada <choice><orig>á</orig><reg>a</reg></choice> la casa vedada, maté uno <choice><orig>ó</orig><reg>o</reg></choice> dos
 <lb n='N007'/><choice><orig>pajaros</orig><reg>pájaros</reg></choice> de los que revoloteaban en torno mío.
 </p>
+<p>
 <lb n='N008'/>Habría caminado unas dos horas sin des-
 <lb n='N009' break="no"/>cansar por la vereda que se <choice><sic>hacia</sic><reg>hacía</reg></choice> más y
 <lb n='N010' break="no"/>más escabroza cuando empecé <choice><orig>á</orig><reg>a</reg></choice> sentirme su-
 <lb n='N011' break="no"/>mamente fatigado. Sea que hubiese perdido
 <lb n='N012'/>la costumbre de caminar en aquellos climas
 <lb n='N013'/>enervadores <choice><orig>ó</orig><reg>o</reg></choice> sea que el poco alimento que
-<lb n='N014'/><choice><sic>habia</sic><reg>había</reg></choice> tomado en todo el dia me hiciese fal-
+<lb n='N014'/><choice><orig>habia</orig><reg>había</reg></choice> tomado en todo el dia me hiciese fal-
 <lb n='N015' break="no"/>ta, lo cierto es que ya casi no podía dar paso.
 <lb n='N016'/><choice><sic>Ademas</sic><reg>Además</reg></choice><add place="inline" resp="#editor">,</add> pensaba con sumo disgusto que la
-<lb n='N017'/>tarde <choice><sic>habia</sic><reg>había</reg></choice> avanzado mucho y que pronto
+<lb n='N017'/>tarde <choice><orig>habia</orig><reg>había</reg></choice> avanzado mucho y que pronto
 <lb n='N018'/>cerraría la noche sin haber encontrado <del>nin-</del>
 <lb n='N019'/><del>g</del>una habitación. <del>y</del> Aun llegué a sospechar
 <lb n='N020'/>que era probable que la historia del mis-
@@ -395,8 +401,8 @@
 <lb n='N022'/>que
 <lb n='N023'/>ancha y más recta, La inferí <del>que</del> debería de con
 <lb n='N024'/>ducir <choice><orig>á</orig><reg>a</reg></choice> la habitacion, y como me devorase la sed,
-<lb n='N025'/>pues no <choice><sic>habia</sic><reg>había</reg></choice> vuelto a encontrar agua desde que
-<lb n='N026'/><choice><sic>habia</sic><reg>había</reg></choice> dejado la orilla del riachuelo, púseme a comer
+<lb n='N025'/>pues no <choice><orig>habia</orig><reg>había</reg></choice> vuelto a encontrar agua desde que
+<lb n='N026'/> <choice><orig>habia</orig><reg>había</reg></choice> dejado la orilla del riachuelo, púseme a comer
 <lb n='N027'/>de las frutas que lucian maduras entre las ramas
 <pb n='10'/>
   <fw type="pageNum" subtype="autor">4</fw>
@@ -444,7 +450,7 @@
 <lb n='N005'/><del>cubiertas de</del> muchos paisajes hechos al <choice><sic>oleo</sic><corr resp="#editor">óleo</corr></choice>, a
 <lb n='N006'/>la aguada y con tinta de <choice><orig>china</orig><reg>China</reg></choice>, reconociendo
 <lb n='N007'/>en un cuadro al frente el riachuelo que tanto
-<lb n='N008'/>me <choice><sic>habia</sic><reg>había</reg></choice> llamado la atención por la maña-
+<lb n='N008'/>me  <choice><orig>habia</orig><reg resp="#editor">había</reg></choice> llamado la atención por la maña-
 <lb n='N009' break="no"/>na.
 </p>
 <p>
@@ -474,7 +480,7 @@
 
 <pb n='12'/>
 
-<lb n='N001'/>como jamás habia visto antes ni lo habia conocido.
+<lb n='N001'/>como jamás <choice><orig>habia</orig><reg resp="#editor">había</reg></choice> visto antes ni lo habia conocido.
 <lb n='N002'/><del>por aquel lado</del> El cerro sobre el cual esta-
 <lb n='N003' break="no"/>ba edificada la casa se levantaba abrupto
 <lb n='N004'/>teniendo al pie un bosque espeso que se pro-
@@ -485,155 +491,167 @@
 <lb n='N009' break="no"/>tos, como en una decoración de <choice><sic>opera</sic><reg>ópera</reg></choice>, no
 <lb n='N010'/><del>se</del> hubieran dejado entre sí un ancho cam-
 <lb n='N011' break="no"/>po por entre el cual la vista se arroja-
-<lb n='N012'/>ba en el mar que <choice><orig>reproducia</orig><reg resp="#editor">reproducía</reg></choice> en aquel
+<lb n='N012' break="no"/>ba en el mar que <choice><orig>reproducia</orig><reg resp="#editor">reproducía</reg></choice> en aquel
 <lb n='N013'/>momento el <del>cielo teñido de oro y de zafiro</del>
 <lb n='N014'/>hermoso cielo tropical <del>de la tarde</del>; teñido por
 <lb n='N015'/>los rayos del sol poniente con anchas fran
-<lb n='N016'/>jás de oro y de zafiro.... Pero esta vista no
-<lb n='N017'/>fué la que más me sorprendió, sino la de
-<lb n='N018'/>una mujer que se hallaba en el aposen
-<lb n='N019'/>to, sentada delante de una mesa cubierta
+<lb n='N016'/>jás de oro y de zafiro... Pero esta vista no
+<lb n='N017'/><choice><orig>fué</orig><reg resp="#editor">fue</reg></choice> la que más me sorprendió, sino la de
+<lb n='N018'/>una mujer que se hallaba en el aposen-
+<lb n='N019' break="no"/>to, sentada delante de una mesa cubierta
 <lb n='N020'/>de toda clase de utiles de dibujo, la que
 <lb n='N021'/>inclinada sobre el espaldar de su silla,
 <lb n='N022'/>con las manos caídas sobre su regazo con-
-<lb n='N023'/>templaba arrobada el lejano paisaje que
-<lb n='N024'/>me habiá llamado la atención con un
+<lb n='N023' break="no"/>templaba arrobada el lejano paisaje que
+<lb n='N024'/>me <choice><orig>habia</orig><reg resp="#editor">había</reg></choice> llamado la atención con un
 <lb n='N025'/>aire de tan profunda tristeza y casi de de-
-<lb n='N026'/>sesperación que se me apretó el corazón al
-</p>
+<lb n='N026' break="no"/>sesperación que se me apretó el corazón al
 <pb n='13'/>
-<p>
-<lb n='N001'/>mirarla como si hubiese comprendido y leido
+<lb n='N001'/>mirarla como si hubiese comprendido y <choice><orig>leido</orig><reg resp="#editor">leído</reg></choice>
 <lb n='N002'/>en su aspecto nomás el dolor incognito, el profun-
-<lb n='N003'/>do desaliento de aquella alma encerrada en ese cuerpo.
+<lb n='N003' break="no"/>do desaliento de aquella alma encerrada en ese cuerpo.
 <lb n='N004'/>Sus grandes ojos parecían fijarse en la mar y en
-<lb n='N005'/>las blancas velas de un navio que paraba en a-
-<lb n='N006'/>quel momento entre los cerros de que hable arriba.
+<lb n='N005'/>las blancas velas de un <choice><orig>navio</orig><reg resp="#editor">navío</reg></choice> que paraba en a-
+<lb n='N006' break="no"/>quel momento entre los cerros de que hablé arriba.
+</p>
+<p>
 <lb n='N007'/>La mujer no era joven, debería de haber pasa-
-<lb n='N008'/>do el meridiano de la vida y contaria más de cua-
-<lb n='N009'/>renta años; pero lo que me causó mayor sorpresa
-<lb n='N010'/>fué la palidez mortal de su rostro, <del>y</del> la fijeza de
+<lb n='N008'/>do el meridiano de la vida y <choice><orig>contaria</orig><reg resp="#editor">contaría</reg></choice> más de cua-
+<lb n='N009' break="no"/>renta años; pero lo que me causó mayor sorpresa
+<lb n='N010'/><choice><orig>fué</orig><reg resp="#editor">fue</reg></choice> la palidez mortal de su rostro, <del>y</del> la fijeza de
 <lb n='N011'/>su mirada y la inmovilidad completa en que
 <lb n='N012'/>yaciá.
+</p>
+<p>
 <lb n='N013'/>Viendo que aunque yo hiciera algún ruido en la
-<lb n='N014'/>vecina estancia ella no se movia, pense que tal
-<lb n='N015'/>vez seria <del>un unclear y</del> que había muerto, y dí
+<lb n='N014'/>vecina estancia ella no se <choice><orig>movia</orig><reg resp="#editor">movía</reg></choice>, pensé que tal
+<lb n='N015'/>vez <choice><orig>seria</orig><reg resp="#editor">sería</reg></choice> <del>[frag]</del> que había muerto, y di
 <lb n='N016'/>algunos pasos hacia ella notando que el ligero
-<lb n='N017'/>viento de la tarde movia su cabellera suelta so-
-<lb n='N018'/>bre sus hombros, la que como un manto se derra-
-<lb n='N019'/>maba en torno de su bata de muselina blanca
-<lb n='N020'/>como una nube. A medida que me acercaba de
+<lb n='N017'/>viento de la tarde <choice><orig>movia</orig><reg resp="#editor">movía</reg></choice> su cabellera suelta so-
+<lb n='N018' break="no"/>bre sus hombros, la que como un manto se derra-
+<lb n='N019' break="no"/>maba en torno de su bata de muselina blanca
+<lb n='N020'/>como una nube. A medida que me acercaba <choice><sic>de</sic><corr resp="#editor">desde</corr></choice>
 <lb n='N021'/>la puerta del aposento ella parecia volver en sí;
 <lb n='N022'/>un ligero color de rosa dio anunación a sus me-
-<lb n='N023'/>jillas, se estremeció en seguida como una persona
+<lb n='N023' break="no"/>jillas, se estremeció en seguida como una persona
 <lb n='N024'/>que despierta, se incorporó en su asiento y vol-
-<lb n='N025'/>iendo la mirada fijó los ojos en mí. La sospresa
+<lb n='N025' break="no"/>iendo la mirada fijó los ojos en mí. La sorpresa
 <lb n='N026'/>que tuvo fué grande; abrió los labios como para
-</p>
+
 <pb n='14'/>
-<p>
+
 <lb n='N001'/>gritar, pero se le ahogó la voz en la gar-
-<lb n='N002'/>ganta, trató de levantarse de su asiento pe-
-<lb n='N003'/>ro no pudo, y le oí decir en seguida pasan-
-<lb n='N004'/>dose la mano por los ojos y hablando en
+<lb n='N002' break="no"/>ganta, trató de levantarse de su asiento pe-
+<lb n='N003' break="no"/>ro no pudo, y le oí decir en seguida pasan-
+<lb n='N004' break="no"/>dose la mano por los ojos y hablando en
 <lb n='N005'/>un idioma que no era el de la isla:
-<lb n='N006'/>—Hasta loca me he vuelto.... veo visiones!
-<lb n='N007'/>Yo en tanto me confundia en saludos di-
-<lb n='N008'/>ciendo con el mayor embarazo:
+<lb n='N006'/>—Hasta loca me he vuelto... <choice><orig>veo</orig><reg resp="#editor">¡Veo</reg></choice> visiones!
+<lb n='N007'/>Yo en tanto me <choice><orig>confundia</orig><reg resp="#editor">confundía</reg></choice> en saludos di-
+<lb n='N008' break="no"/>ciendo con el mayor embarazo:
 <lb n='N009'/>—Señora, perdóneme <choice><expan>usted</expan><abbr>U.</abbr></choice>, excuse <choice><expan>usted</expan><abbr>U.</abbr></choice> mi entrada
-<lb n='N010'/>inoportuna.... pero soy extranjero en la isla.
-<lb n='N011'/>Me perdí.... y habiendo visto esta casa abierta
+<lb n='N010'/>inoportuna<choice><orig>...</orig><reg resp="#editor">...,</reg></choice> pero soy extranjero en la isla.
+<lb n='N011'/>Me perdí... <choice><orig>y</orig><reg resp="#editor">Y</reg></choice> habiendo visto esta casa abierta
 <lb n='N012'/>me atreví a entrar.
 <lb n='N013'/>Ella me miraba sin contestar, pues no
 <lb n='N014'/>podia verme muy <choice><orig>á</orig><reg>a</reg></choice> las claras estando yo
-<lb n='N015'/><del>del aposento</del>
-<lb n='N016'/>en el fondo <hi rend='subscript:true;'>x</hi> y habiendo empezado ya oscu-
-<lb n='N017'/>recer con aquella prontitud que caracteriza
-<lb n='N018'/>los paises intertropicales.
-<lb n='N019'/>—Quien es <choice><expan>usted</expan><abbr>U.</abbr></choice>? y como se atreve a entrar <choice><orig>á</orig><reg>a</reg></choice>
-<lb n='N020'/>mi casa sin permiso? exclamó a mi espal-
-<lb n='N021'/>da una voz irritada.
-<lb n='N022'/>Yo me volví entonces y ví en la puerta del
+<lb n='N016'/>en el fondo<metamark><hi rend='subscript:true;'>x</hi></metamark> <lb n='N015'/> <add place="above">del aposento</add> y habiendo empezado ya oscu-
+<lb n='N017'/>recer con aquella prontitud que caracteriza caracteriza <choice><orig></orig><reg resp="#editor">a</reg></choice>
+<lb n='N018'/>los <choice><orig>paises</orig><reg resp="#editor">países</reg></choice> intertropicales.
+<lb n='N019'/><choice><orig>—Quien</orig><reg resp="#editor">—¿Quién</reg></choice> es <choice><expan>usted</expan><abbr>U.</abbr></choice>? <choice><orig>y</orig><reg resp="#editor">¿Y</reg></choice> cómo se atreve a entrar <choice><orig>á</orig><reg>a</reg></choice>
+<lb n='N020'/>mi casa sin permiso? <choice><orig>exclamó</orig><reg resp="#editor">Exclamó</reg></choice> a mi espal-
+<lb n='N021' break="no"/>da una voz irritada.
+</p>
+<p> 
+<lb n='N022'/>Yo me volví entonces y <choice><orig>ví</orig><reg resp="#editor">vi</reg></choice> en la puerta del
 <lb n='N023'/>saloncito a un caballero alto, delgado, vestido
 <lb n='N024'/>de blanco de pies <choice><orig>á</orig><reg>a</reg></choice> cabeza y con el cabello ente-
-<lb n='N025'/>ramente cano, lo que le daba un aspecto de
+<lb n='N025' break="no"/>ramente cano, lo que le daba un aspecto de
 <lb n='N026'/>fantasma.
-<lb n='N027'/>Le contesté lo que había pensado decirle, aca-
+</p>
+<p>
+<lb n='N027'/>Le contesté lo que <choice><orig>habia</orig><reg resp="#editor">había</reg></choice> pensado decirle, aca-
 <lb n='N028'/>bando
-</p>
+
 <pb n='15'/>
-<p>
+
 <lb n='N001'/>con pedirle la hospitalidad por aquella noche,
-<lb n='N002'/>puesto que está se acercaba ya.
-<lb n='N003'/>—Caballero, contestó el amo de la casa, —diré a <choice><expan>usted</expan><abbr>U.</abbr></choice>
-<lb n='N004'/>que desde que vivo aquí nadie de fuera (sin con-
-<lb n='N005'/>tar con los sirvientes) ha pasado jamás una no-
-<lb n='N006'/>che en esta casa, no solo una noche, pero ni u-
-<lb n='N007'/>na hora del dia.... sin embargo (añadió mirando
-<lb n='N008'/>a la señora, que vuelta de su sorpresa habia sa-
-<lb n='N009'/>lido adonde estabamos) atendiendo <choice><orig>á</orig><reg>a</reg></choice> lo tarde de
-<lb n='N010'/>la hora en que <choice><expan>usted</expan><abbr>U.</abbr></choice> se ha presentado aquí, mi Se-
-<lb n='N011'/>nora y yo procuraremos darle hospitalidad has-
-<lb n='N012'/>la mañana.
-<lb n='N013'/>—Si la molestia es demasiado grande, —contesté
-<lb n='N014'/>yo un tanto azorado,— yo no querría ser impruden-
-<lb n='N015'/>te; y estoy listo <choice><orig>á</orig><reg>a</reg></choice> volverme <choice><orig>á</orig><reg>a</reg></choice> la ciudad ahora
-<lb n='N016'/>mismo si <choice><expan>usted</expan><abbr>U.</abbr></choice> me hace el favor de proporcionar-
-<lb n='N017'/>me un guia que me lleve al travez de la món-
-<lb n='N018'/>taña.....
-<lb n='N019'/>—Eso no, exclamó la señora interviniendo en la
-<lb n='N020'/>conversación, — eso no! No crea <choice><expan>usted</expan><abbr>U.</abbr></choice> caballero que <choice><expan>usted</expan><abbr>U.</abbr></choice>
-<lb n='N021'/>trata con salvajes y gente de mal corazón. Le ase-
-<lb n='N022'/>guro <choice><orig>á</orig><reg>a</reg></choice> <choice><expan>usted</expan><abbr>U.</abbr></choice> que tendrémos mucho gusto en darle a
-<lb n='N023'/><choice><expan>usted</expan><abbr>U.</abbr></choice> albergue por esta noche. Síentese <choice><expan>usted</expan><abbr>U.</abbr></choice> añadió, mi
-<lb n='N024'/>rando <choice><orig>á</orig><reg>a</reg></choice> su marido con una sonrisa forzada, y
-<lb n='N025'/>háblenos <choice><expan>usted</expan><abbr>U.</abbr></choice> del mundo y de lo que se dice en
-<lb n='N026'/>él de nuevo, -en tanto que sirven la comida, cuya
+<lb n='N002'/>puesto que esta se acercaba ya.
 </p>
-<pb n='16'/>
 <p>
+<lb n='N003'/>—Caballero<choice><orig>, contestó el amo de la casa;</orig><reg resp="#editor"> —contestó el amo de la casa—,</reg></choice> diré a <choice><expan>usted</expan><abbr>U.</abbr></choice>
+<lb n='N004'/>que desde que vivo aquí nadie de fuera (sin con-
+<lb n='N005' break="no"/>tar con los sirvientes) ha pasado jamás una no-
+<lb n='N006' break="no"/>che en esta casa, no solo una noche, pero ni u-
+<lb n='N007' break="no"/>na hora del dia... <choice><orig>sin</orig><reg resp="#editor">Sin</reg></choice> embargo <choice><orig>(</orig><reg resp="#editor">—</reg></choice>añadió mirando
+<lb n='N008'/>a la señora, que vuelta de su sorpresa <choice><orig>habia</orig><reg resp="#editor">había</reg></choice> sa-
+<lb n='N009'/>lido adonde estabamos<choice><orig>)</orig><reg resp="#editor">—,</reg></choice> atendiendo <choice><orig>á</orig><reg>a</reg></choice> lo tarde de
+<lb n='N010'/>la hora en que <choice><expan>usted</expan><abbr>U.</abbr></choice> se ha presentado aquí, mi Se-
+<lb n='N011' break="no"/>ñora y yo procuraremos darle hospitalidad has-
+<lb n='N012' break="no"/>la mañana.
+</p>
+<p>
+<lb n='N013'/>—Si la molestia es demasiado grande<choice><orig>; </orig><reg resp="#editor"> —</reg></choice>contesté
+<lb n='N014'/>yo un tanto azorado<choice><orig>,—</orig><reg resp="#editor">—,</reg></choice> yo no querría ser impruden-
+<lb n='N015' break="no"/>te; y estoy listo <choice><orig>á</orig><reg>a</reg></choice> volverme <choice><orig>á</orig><reg>a</reg></choice> la ciudad ahora
+<lb n='N016'/>mismo si <choice><expan>usted</expan><abbr>U.</abbr></choice> me hace el favor de proporcionar-
+<lb n='N017' break="no"/>me un <choice><orig>guia</orig><reg resp="#editor">guía</reg></choice> que me lleve al <choice><orig>travez</orig><reg resp="#editor">través</reg></choice> de la món-
+<lb n='N018' break="no"/>taña...
+</p>
+<p>
+<lb n='N019'/>—Eso <choice><orig>no, </orig><reg resp="#editor">no —</reg></choice>exclamó la señora interviniendo en la
+<lb n='N020'/><choice><orig>conversación, — eso no!</orig><reg resp="#editor">conversación— ¡eso no!</reg></choice> No crea <choice><expan>usted</expan><abbr>U.</abbr></choice> caballero que <choice><expan>usted</expan><abbr>U.</abbr></choice>
+<lb n='N021'/>trata con salvajes y gente de mal corazón. Le ase-
+<lb n='N022'/>guro <choice><orig>á</orig><reg>a</reg></choice> <choice><expan>usted</expan><abbr>U.</abbr></choice> que <choice><orig>tendrémos</orig><reg resp="#editor">tendremos</reg></choice> mucho gusto en darle a
+<lb n='N023'/><choice><expan>usted</expan><abbr>U.</abbr></choice> albergue por esta noche. Sientese <choice><expan>usted</expan><abbr>U.</abbr></choice> <choice><orig></orig><reg></reg></choice>añadió, mi
+<lb n='N024' break="no"/>rando <choice><orig>á</orig><reg>a</reg></choice> su marido con una sonrisa forzada<choice><orig>,</orig><reg>—</reg></choice> y
+<lb n='N025'/>háblenos <choice><expan>usted</expan><abbr>U.</abbr></choice> del mundo y de lo que se dice en
+<lb n='N026'/>él de nuevo<choice><orig>;</orig><reg resp="#editor">,</reg></choice> en tanto que sirven la comida, cuya
+
+<pb n='16'/>
+
 <lb n='N001'/>hora no tardará.
-<lb n='N002'/><add place='above'>pero más ó ménos</add>
-<lb n='N003'/>El caballero repitio lo que la señora decia
+</p>
+<p> 
+<lb n='N003'/>El caballero <choice><orig>repitio</orig><reg resp="#editor">repitió</reg></choice> <add place='above'>pero más ó ménos</add> lo que la señora <choice><orig>decia</orig><reg resp="#editor">decía</reg></choice>
 <lb n='N004'/>y cuando hube presentado mi tarjeta y dicho
 <lb n='N005'/>lo que me llevaba <choice><orig>á</orig><reg>a</reg></choice> aquellos retirados parajes,
-<lb n='N006'/>la conversación se trató acerca de cosas in-
-<lb n='N007'/>diferentes entre la señora y yo, en tanto
-<lb n='N008'/>que el caballero parecia meditabundo y
-<lb n='N009'/>taciturno y rara vez decia algunas palabras.
+<lb n='N006'/>la conversación se trabó acerca de cosas in-
+<lb n='N007' break="no"/>diferentes entre la señora y yo, en tanto
+<lb n='N008'/>que el caballero <choice><orig>parecia</orig><reg resp="#editor">parecía</reg></choice> meditabundo y
+<lb n='N009'/>taciturno y rara vez <choice><orig>decia</orig><reg resp="#editor">decía</reg></choice> algunas palabras.
+</p>
+<p>
 <lb n='N010'/>Ya estaba casi oscuro cuando se presen-
-<lb n='N011'/>tó un sirviente llevando luces y otro <choice><orig>á</orig><reg>a</reg></choice> anún-
+<lb n='N011' break="no"/>tó un sirviente llevando luces y otro <choice><orig>á</orig><reg>a</reg></choice> anún-
 <lb n='N012'/>ciar que estaba servida la comida, quedan-
-<lb n='N013'/>do uno y otro sorprendidos al ver un huésped
-<lb n='N014'/>en donde jamas habian visto otro.
-<lb n='N015'/>—<persName wikiData='Q11687769'>Bernardo</persName>, dijo el Caballero dirigiendose a u-
-<lb n='N016'/>no de los sirvientes,- pón un cubierto mas en la
+<lb n='N013' break="no"/>do uno y otro sorprendidos al ver un huésped
+<lb n='N014'/>en donde jamás <choice><orig>habian</orig><reg resp="#editor">habían</reg></choice> visto otro.
+<lb n='N015'/>—<persName>Bernardo</persName><choice><orig>,</orig><reg resp="#editor"> —</reg></choice> dijo el Caballero dirigiendose a u-
+<lb n='N016' break="no"/>no de los sirvientes<choice><orig>;</orig><reg resp="#editor">—</reg></choice> <choice><orig>pón</orig><reg resp="#editor">pon</reg></choice> un cubierto más en la
 <lb n='N017'/>mesa, puesto que este señor nos acompaña
-<lb n='N018'/>a comer,- y volviéndose me dijo que tuviera
-<lb n='N019'/>la bondad de darle el brazo a la Señora y
-<lb n='N020'/>conducirla al comedor; pasando él adelante
+<lb n='N018'/>a comer<choice><orig>,-</orig><reg resp="#editor">.</reg></choice> <choice><orig>y</orig><reg resp="#editor">Y</reg></choice> volviéndose me dijo que tuviera
+<lb n='N019'/>la bondad de darle el brazo a la <choice><orig>Señora</orig><reg resp="#editor">señora</reg></choice> y
+<lb n='N020'/>conducirla al comedor<choice><orig>;</orig><reg resp="#editor">,</reg></choice> pasando él adelante
 <lb n='N021'/>para mostrarme el camino.
 </p>
  </div>
- </div>
+ 
 <div type="chapter" n="2">
     <head><lb n='N022'/>II</head>
 
+
+ </div>
  </div>
 <div type="part" n="1">
     <head>Parte Primera</head>
-    <div type="chapter" n="1"><head>I</head>   … </div>
-    <div type="chapter" n="2"><head>II</head>  … </div>
-    <div type="chapter" n="3"><head>III</head> … </div>
+   
   </div>
 
   <div type="part" n="2">
     <head>Parte Segunda</head>
-    <div type="chapter" n="1"><head>I</head> … </div>
-    …  <!-- II, III, IV, V -->
+
   </div>
 
- </div>
     </body>
   </text>
 </TEI>
