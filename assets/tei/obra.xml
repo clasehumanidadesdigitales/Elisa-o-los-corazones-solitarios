@@ -791,10 +791,13 @@ tanto <add place="inline">las</add> Grandes como peque-
   </p> 
 <p>
   <lb n='N009'/>—¿Como se siente ahora?
-  </p> 
+  </p>
 <p>
-  <lb n='N010'/>—Muy malo, malísimo, —contesté.
-  </p> 
+  <lb n='N010'/>—Muy malo, malísimo<choice>
+                                            <orig>, —contesté.</orig>
+                                            <reg resp="#editor"> —contesté—.</reg>
+                                          </choice>
+  </p>  
 <p>
   <lb n='N011'/>—Esa es buena seña, dijo él sonriendo.
   </p> 
