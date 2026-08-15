@@ -980,40 +980,39 @@ tanto <add place="inline">las</add> Grandes como peque-
 <p>
   <lb n='N001'/><choice><sic>Cómo</sic><reg resp="#editor">Como</reg></choice> dejo dicho, aunque mi convalecencia <choice><orig>fué</orig><reg>fue</reg></choice>
   <lb n='N002'/>larga y trascurrieron más de dos semanas desde
-  <lb n='N003'/>el dia en que la señora me habló con alguna fran
-  <lb n='N004'/><add place='above'><metamark function='insertion' rend='subscript:true;'>x</metamark></add>
-  <lb n='N005'/>queza, después de  <del>aquel dia</del> ella no me dejó jamas
+  <lb n='N003'/>el dia en que la señora me habló con alguna fran-
+  <lb n='N005' break="no"/>queza, después de<metamark function='insertion' rend='subscript:true;'>x</metamark> <subst><del>aquel dia</del><add>eso</add></subst> ella no me dejó jamas
   <lb n='N006'/>lado para interrogarla acerca de su vida antes
   <lb n='N007'/>de radicarse en aquella isla.
   <lb n='N008'/>La <choice><orig>vizpera</orig><reg resp="#editor">víspera</reg></choice> del día señalado para mi partida,
-  <lb n='N009'/>y en tanto que el Doctor se hallaba en su labora
-  <lb n='N010'/><del><hi>x</hi></del> estando yo en el jardín
-  <lb n='N011'/>torio <metamark function='insertion' rend='subscript:true;'>x</metamark> ella me llamó por la puerta ventana de la
-  <lb n='N012'/>libreria y me invitó á que entrase.
-  <lb n='N013'/>Después de haber hablado de cosas indiferentes
+  <lb n='N009'/>y en tanto que el Doctor se hallaba en su labora/
+  <lb n='N011'/>torio<metamark function='insertion' rend='subscript:true;'>x</metamark> <add place="above">estando yo en el jardín,</add>
+ ella me llamó por la puerta ventana de la
+  <lb n='N012'/><choice><sic>libreria</sic><reg resp="#editor">librería</reg></choice> y me invitó <choice><orig>á</orig><reg>a</reg></choice> que entrase.
+  <lb n='N013'/>Después de haber hablado de cosas indiferentes<reg>,</reg>
   <lb n='N014'/>al fin ella me dijo:
   </p>
 <p>
-  <lb n='N015'/>— Quiero hacerle una suplica....
+  <lb n='N015'/>— Quiero hacerle una suplica...
   </p>
 <p>
-  <lb n='N016'/>— ¿Cuál señora?
+  <lb n='N016'/>— ¿Cuál<reg>,</reg> señora?
   </p>
 <p>
   <lb n='N017'/>— Que nunca descubra el secreto de nuestra existen-
-  <lb n='N018'/>cia oculta en esta isla retirada del mundo.
+  <lb n='N018' break="no"/>cia oculta en esta isla retirada del mundo.
   </p>
 <p>
-  <lb n='N019'/>—¿ Y como seria eso posible, señora, cuando <choice><expan>usted</expan><abbr>U.</abbr></choice> mis
-  <lb n='N020'/>ma me ha dicho que el nombre que llevan aqui
+  <lb n='N019'/>—¿ Y como <choice><orig>seria</orig><reg>sería</reg></choice> eso posible, señora, cuando <choice><expan>usted</expan><abbr>U.</abbr></choice> mis
+  <lb n='N020' break="no"/>ma me ha dicho que el nombre que llevan aqui
   <lb n='N021'/>no es el verdadero?
   </p>
 <p>
-  <lb n='N022'/>—Es cierto; mi marido ha tomado el nombre de su
-  <lb n='N023'/>tio maternal de quien heredó esta propiedad.... Pe-
-  <lb n='N024'/>ro naturalmente si <choice><expan>usted</expan><abbr>U.</abbr></choice> se propusiera descubrir el
-  <lb n='N025'/>verdadero le seria talvez fácil; pero eso es lo que
-  <lb n='N026'/>yo le suplico que no haga aunque pienso que
+  <lb n='N022'/>—Es cierto<choice><orig>;</orig><reg>,</reg></choice> mi marido ha tomado el nombre de su
+  <lb n='N023'/>tio maternal de quien heredó esta propiedad... Pe-
+  <lb n='N024' break="no"/>ro naturalmente si <choice><expan>usted</expan><abbr>U.</abbr></choice> se propusiera descubrir el
+  <lb n='N025'/>verdadero le <choice><orig>seria</orig><reg>sería</reg></choice> talvez fácil; pero eso es lo que
+  <lb n='N026'/>yo le suplico que no haga<reg>,</reg> aunque pienso que
   <lb n='N027'/><choice><expan>usted</expan><abbr>U.</abbr></choice> lo conocerá algún dia.
   </p>
 <p>
@@ -1021,129 +1020,121 @@ tanto <add place="inline">las</add> Grandes como peque-
 </p>
 <pb n='26'/>
 <p>
-  <lb n='N001'/>23
-  <lb n='N002'/>25
-</p>
-<p>
-  <lb n='N001'/>—Le diré.....
+  <lb n='N001'/>—Le diré...
   </p>
 <p>
   <lb n='N002'/>Pero al decir esto parecía embarazada y tu-
-  <lb n='N003'/>vo que hacer un esfuerzo para continuar dicien-
-  <lb n='N004'/>do.
+  <lb n='N003' break="no"/>vo que hacer un esfuerzo para continuar dicien-
+  <lb n='N004' break="no"/>do.
   </p>
 <p>
   <lb n='N005'/>—Desde que llegó <choice><expan>usted</expan><abbr>U.</abbr></choice> aquí, comprendí que me
-  <lb n='N006'/>lo envidva el cielo, pues como le he dicho yo
+  <lb n='N006'/>lo enviaba el cielo, pues como le he dicho yo
   <lb n='N007'/>no había hablado con persona alguna inteli-
-  <lb n='N008'/>gente desde que llegue á este lugar.... Hacia
+  <lb n='N008' break="no"/>gente desde que llegue <choice><orig>á</orig><reg>a</reg></choice> este lugar... <choice><orig>Hacia</orig><reg>Hacía</reg></choice>
   <lb n='N009'/>mucho tiempo que deseaba dejar mis memorias
   <lb n='N010'/>y la relación de mi vida a alguna persona
-  <lb n='N011'/>que fuera capaz de y sacar de ella un salu
-  <lb n='N012'/>dable ejemplo que pudiera servir como un fa-
-  <lb n='N013'/>ro pala las mujeres románticas y demasiado
+  <lb n='N011'/>que fuera capaz de sacar de ella un salu-
+  <lb n='N012' break="no"/>dable ejemplo que pudiera servir como un fa-
+  <lb n='N013' break="no"/>ro para las mujeres románticas y demasiado
   <lb n='N014'/>sensibles; faro que sirviera para iluminar los
   <lb n='N015'/>escollos que rodean a todas las mujeres de co-
-  <lb n='N016'/>razón para que su vida no naufrague en
+  <lb n='N016' break="no"/>razón para que su vida no naufrague en
   <lb n='N017'/>las <del>escollos</del> rocas del desengaño que las rodean
   <lb n='N018'/>por todas partes. La mujer no debe aspirar sino
-  <lb n='N019'/>á cumplir con sus deberes; desgraciada de aquella
-  <lb n='N020'/>que se atreva á pedirle otra cosa a la vida !
+  <lb n='N019'/><choice><orig>á</orig><reg>a</reg></choice> cumplir con sus deberes; desgraciada de aquella
+  <lb n='N020'/>que se atreva <choice><orig>á</orig><reg>a</reg></choice> pedirle otra cosa a la vida!
   </p>
 <p>
   <lb n='N021'/>—¿Y por ventura <choice><expan>usted</expan><abbr>U.</abbr></choice> tiene alguna cosa escrita?
-  <lb n='N022'/>pregunté.
+  <lb n='N022'/><reg>—</reg>pregunté.
   </p>
 <p>
-  <lb n='N023'/>— Si; tengo reunidos <del>y</del> todos mis papeles y una
+  <lb n='N023'/>—<choice><orig>Sí;</orig><reg>Sí,</reg></choice> tengo reunidos <del>y</del> todos mis papeles y una
   <lb n='N024'/>relación sucinta de mi vida.... <choice><expan>usted</expan><abbr>U.</abbr></choice> sabe, aña-
-  <lb n='N025'/>dió con una pálida sonrisa, que mi única dis
-  <lb n='N026'/>tracción es escribir y dibujar.
+  <lb n='N025' break="no"/>dió con una pálida sonrisa, que mi única dis
+  <lb n='N026' break="no"/>tracción es escribir y dibujar.
 </p>
 <pb n='27'/>
 <p>
-  <lb n='N001'/>— Si señora, así lo he visto, y por cierto que el mé-
-  <lb n='N002'/>todo de vida de <choice><expan>usted</expan><abbr>U.</abbr></choice> es el que menos lugar deja al
+  <lb n='N001'/>—<choice><orig>Sí</orig><reg>Sí,</reg></choice> señora, así lo he visto, y por cierto que el mé-
+  <lb n='N002' break="no"/>todo de vida de <choice><expan>usted</expan><abbr>U.</abbr></choice> es el que menos lugar deja al
   <lb n='N003'/>ocio.
-  <lb n='N004'/>— Así es, contesté, y eso y solo eso es lo que me ha
+  <lb n='N004'/>—Así es<choice><orig>, contestó ella,</orig><reg> contestó ella,</reg></choice> y eso y solo eso es lo que me ha
   <lb n='N005'/>salvado de la desesperación, aunque me ha hecho
-  <lb n='N006'/>un grave mal: el de prolongarme la vida....
-  <lb n='N007'/>— No diga <choice><expan>usted</expan><abbr>U.</abbr></choice> tal cosa! ¿Qué sería de la existen-
+  <lb n='N006'/>un grave mal: el de prolongarme la vida...
+  <lb n='N007'/>—<reg>¡</reg>No diga <choice><expan>usted</expan><abbr>U.</abbr></choice> tal cosa! ¿Qué sería de la existen-
   <lb n='N008'/>cia del Doctor si <choice><expan>usted</expan><abbr>U.</abbr></choice> no existiera?
-  <lb n='N009'/>— Es cierto, contestó ella sin mirarme, si yo hu
-  <lb n='N010'/>biera muerto ahora años..... pero no se trata de
+  <lb n='N009'/>—Es cierto<choice><orig>, contestó ella sin mirarme,</orig><reg> —contestó ella sin mirarme—,</reg></choice> si yo hu-
+  <lb n='N010' break="no"/>biera muerto ahora años... pero no se trata de
   <lb n='N011'/>eso ahora sino del encargo que quiero hacerle.
-  <lb n='N012'/>— ¿Cual es señora ? Por ventura <choice><expan>usted</expan><abbr>U.</abbr></choice> me confiaria
-  <lb n='N013'/>esos papeles de que <choice><expan>usted</expan><abbr>U.</abbr></choice> me habla ?
-  <lb n='N014'/>— Si; <del>pero</del> cuando me muera se los legaré.
-  <lb n='N015'/>— Ah! eso tardará mucho..... y puede ser que yo mue-
-  <lb n='N016'/>ra antes talvez.
-  <lb n='N017'/>— Eso no es probable, contestó ella; pues yo sufro una
+  <lb n='N012'/>—¿Cual es señora ? <reg>¿</reg>Por ventura <choice><expan>usted</expan><abbr>U.</abbr></choice> me <choice><orig>confiaria</orig><reg>confiría</reg></choice>
+  <lb n='N013'/>esos papeles de que <choice><expan>usted</expan><abbr>U.</abbr></choice> me habla?
+  <lb n='N014'/>—Si; <del>pero</del> cuando me muera se los legaré.
+  <lb n='N015'/>—<reg>¡</reg>Ah! eso tardará mucho... y puede ser que yo mue-
+  <lb n='N016' break="no"/>ra antes talvez.
+  <lb n='N017'/>—Eso no es probable, contestó ella; pues yo sufro una
   <lb n='N018'/>enfermedad al corazón que no me dejará mucho
   <lb n='N019'/>tiempo más en este mundo, pues últimamente ha
   <lb n='N020'/>tomado proporciones muy serias. Así, lo único que
   <lb n='N021'/>le ruego es que <del>me</del> apunte en esta cartera la direc-
-  <lb n='N022'/>ción á la cual se deben de dirigir mis manus
-  <lb n='N023'/>critos cuando yo muera.
-  <lb n='N024'/>— ¿Pero á quien se los confiará <choice><expan>usted</expan><abbr>U.</abbr></choice>?.. <add place='inline'>¿Al Doctor?</add>
-  <lb n='N025'/>— Al cura de la población más vecina.... es un
+  <lb n='N022' break="no"/>ción á la cual se deben de dirigir mis manus-
+  <lb n='N023' break="no"/>critos cuando yo muera.
+  <lb n='N024'/>— ¿Pero á quien se los confiará <choice><expan>usted</expan><abbr>U.</abbr></choice>?... <add place='inline'>¿Al Doctor?</add>
+  <lb n='N025'/>— Al cura de la población más vecina... es un
   <lb n='N026'/>hombre exelente y el único civilizado con quién suelo
-</p>
-<p>
-  <lb n='N001'/><unclear><orgName>@Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</orgName></unclear>
-</p>
+
 <pb n='28'/>
 
-<p>
   <lb n='N001'/>conversar algunas veces en el año cuando cumplo
   <lb n='N002'/>con mis deberes religiosos.
-  <lb n='N003'/>— ¿Pero no sería más prudente entregarme ese
+  <lb n='N003'/>—¿Pero no sería más prudente entregarme ese
   <lb n='N004'/>deposito antes de mi partida?
-  <lb n='N005'/>— No; yo le conozco, es un hombre cumplido,
-  <lb n='N006'/>que hará lo que yo le pido..... Cuando <choice><expan>usted</expan><abbr>U.</abbr></choice> re-
-  <lb n='N007'/>ciba mis manuscritos será la señal de mi
-  <lb n='N008'/><add place='above'><metamark function='insertion' rend='subscript:true;'>x</metamark> á Dios</add>
-  <lb n='N009'/>muerte. Rueguele <metamark function='insertion' rend='subscript:true;'>x</metamark> que sea pronto !
-  <lb n='N010'/>— <choice><expan>usted</expan><abbr>U.</abbr></choice> desearía, dije yo, que esas memorias se
+  <lb n='N005'/>—No; yo le conozco, es un hombre cumplido,
+  <lb n='N006'/>que hará lo que yo le pido... Cuando <choice><expan>usted</expan><abbr>U.</abbr></choice> re-
+  <lb n='N007' break="no"/>ciba mis manuscritos será la señal de mi
+  <lb n='N009'/>muerte. Rueguele <metamark function='insertion' rend='subscript:true;'>x</metamark> <add place='above'><metamark function='insertion' rend='subscript:true;'>x</metamark>á Dios</add>que sea pronto!
+  <lb n='N010'/>—<reg>¿</reg>¿<choice><expan>Usted</expan><abbr>U.</abbr></choice> desearía<choice><orig>,</orig><reg> —</reg></choice>dije yo<choice><orig>,</orig><reg>—</reg></choice> que esas memorias se
   <lb n='N011'/>publicasen tal como <choice><expan>usted</expan><abbr>U.</abbr></choice> me las enviara?
-  <lb n='N012'/>—<choice><expan>usted</expan><abbr> U.</abbr></choice> hará lo que le parezca mejor.... pues
+  <lb n='N012'/>—<choice><expan>Usted</expan><abbr> U.</abbr></choice> hará lo que le parezca mejor... pues
   <lb n='N013'/>me ha dicho <choice><expan>usted</expan><abbr>U.</abbr></choice> que está enseñado a escribir
   <lb n='N014'/>para la prensa. Yo le daré los materiales y con
   <lb n='N015'/>ellos compondrá <choice><expan>usted</expan><abbr>U.</abbr></choice> lo que guste.
   <lb n='N016'/>En aquel momento entró á la estan
   <lb n='N017'/>cia el Doctor y la conversación cambió de ob-
-  <lb n='N018'/>jeto.
+  <lb n='N018' break="no"/>jeto.
   <lb n='N019'/>Al día siguiente me despedí de mis buenos
   <lb n='N020'/>y hospitalarios amigos y lo hize con tanta
   <lb n='N021'/>mayor pena cuanto que el Doctor me prohibió
-  <lb n='N022'/>solemnemente que volviera á tener la menor
+  <lb n='N022'/>solemnemente que volviera <choice><orig>á</orig><reg>a</reg></choice> tener la menor
   <lb n='N023'/>comunicación con ellos y acabó con estas palabras.
-  <lb n='N024'/>— Suplico á <choice><expan>usted</expan><abbr>U.</abbr></choice> que nos considere como á perso-
+  <lb n='N024'/>— Suplico <choice><orig>á</orig><reg>a</reg></choice> <choice><expan>usted</expan><abbr>U.</abbr></choice> que nos considere como <choice><orig>á</orig><reg>a</reg></choice> perso-
   <lb n='N025'/>nas que han muerto y olvídenos completa-
-  <lb n='N026'/>mente.
-</p>
-<p>
-  <lb n='N001'/><unclear><orgName>@Biblioteca Nacional de Colombia - Instituto Caro y Cuervo</orgName></unclear>
+  <lb n='N026' break="no"/>mente.
 </p>
 <pb n='29'/>
 
 <p>
-  <lb n='N001'/>Un año poco más ó menos habia <unclear alternative='inteligible'>trascurri-</unclear>
-  <lb n='N002'/><unclear alternative='inteligible'>do</unclear> cuando estando una mañana sentado tran
-  <lb n='N003'/>quilamente delante de mi bufete vinieron á
+  <lb n='N001'/>Un año poco más ó menos habia trascurri-
+  <lb n='N002' break="no"/>do cuando estando una mañana sentado tran-
+  <lb n='N003' break="no"/>quilamente delante de mi bufete vinieron á
   <lb n='N004'/>decirme que un eclesiástico necesitaba hablar
   <lb n='N005'/>conmigo.
+</p>
+<p>
   <lb n='N006'/>Le hize entrar inmediatamente y le pregún
-  <lb n='N007'/>té en que le podra servir. Dijome entonces que
+  <lb n='N007' break="no"/>té en que le podra servir. Dijome entonces que
   <lb n='N008'/>era el cura de la vecina parroquia á quien le
   <lb n='N009'/>habian confiado un paquete para que me fue-
-  <lb n='N010'/>ra entregado de parte del cura de xxx en las
+  <lb n='N010' break="no"/>ra entregado de parte del cura de xxx en las
   <lb n='N011'/>Antillas.
   <lb n='N012'/>Apenas me dejó sólo el eclesiástico abrí el
-  <lb n='N013'/>paquete dirigido á mí y encontre en él va-
-  <lb n='N014'/>nos cuadernillos de papel, escritos en diferentes
+  <lb n='N013'/>paquete dirigido á mí y encontré en él va-
+  <lb n='N014' break="no"/>rios cuadernillos de papel, escritos en diferentes
   <lb n='N015'/>epocas, algunas cartas y varios paisajes que
   <lb n='N016'/>reconocí.
+</p>
+<p>
   <lb n='N017'/>Después de leer y releer varias veces aquel
   <lb n='N018'/>manuscrito compuse la siguiente relación.
   <lb n='N019'/>He variado solamente las fechas, los nombres
@@ -1152,7 +1143,7 @@ tanto <add place="inline">las</add> Grandes como peque-
   <lb n='N022'/>que he<del>mos</del> tratado de narrar. Ademas como el es-
   <lb n='N023'/>tilo autobiográfico es géneralmente cansado y fas-
   <lb n='N024'/>tidioso resolví hacerlo en tercera persona, lo que le
-  <lb n='N025'/>dá mayor variedad y movimiento.
+  <lb n='N025'/>dá mayor variedad y movimiento. 
 </p>
 
 </div>
