@@ -7,7 +7,7 @@
       <title type="sub">Novela sicológica</title>
       <author>Soledad Acosta de Samper</author>
 
-      <respStmt xml:id="autora">
+      <respStmt xml:id="resp_autora">
         <resp>Autora del manuscrito</resp>
         <name>Soledad Acosta de Samper</name>
       </respStmt>
@@ -54,6 +54,14 @@
               <support>Cuaderno manuscrito en tinta púrpura.</support>
             </supportDesc>
           </objectDesc>
+          <handDesc>
+              <handNote xml:id="hand_principal">
+                  Mano principal del manuscrito, correspondiente a Soledad Acosta de Samper, en tinta púrpura.
+              </handNote>
+              <handNote xml:id="hand_revision">
+                    Mano posterior responsable de anotaciones en tinta negra; posiblemente de la autora en una intervención posterior.
+              </handNote>
+            </handDesc>
         </physDesc>
         <history>
           <origin>
@@ -79,39 +87,45 @@
     </projectDesc>
 
     <editorialDecl>
-      <p>
+       <p>
         La transcripción inicial se generó mediante reconocimiento de
         escritura manuscrita (HTR) en la plataforma Transkribus, con
         revisión y corrección filológica posterior.
       </p>
       <p>
         Las intervenciones editoriales se codifican mediante el
-        elemento <gi>choice</gi>, anidando <gi>orig</gi>/<gi>reg</gi>
-        para normalizaciones ortográficas y de puntuación de época,
-        <gi>abbr</gi>/<gi>expan</gi> para abreviaturas, y
-        <gi>sic</gi>/<gi>corr</gi> para errores propios de la autora.
+        elemento choice, anidando orig/reg para normalizaciones
+        ortográficas y de puntuación de época, abbr/expan para
+        abreviaturas, y sic/corr para errores propios de la autora.
+      </p>
+      <p>
+        La normalización ortográfica y de puntuación de época
+        (orig/reg) se aplica de forma silenciosa: se declara aquí una
+        única vez y no se señala individualmente en la lectura
+        regularizada, con el fin de no introducir ruido gráfico. Las
+        correcciones de errores de la autora (sic/corr) y las
+        intervenciones editoriales de carácter sustantivo sí se marcan
+        visualmente y se atribuyen mediante el atributo resp, por
+        tratarse de decisiones auditables.
       </p>
       <p>
         Las revisiones genéticas del manuscrito (tachaduras y
-        adiciones interlineales) se codifican mediante <gi>subst</gi>,
-        anidando <gi>del</gi> y <gi>add</gi>. El atributo
-        <att>resp</att> distingue las intervenciones de la autora
-        (<ref target="#autora">#autora</ref>) de las decisiones
-        editoriales del equipo de edición
-        (<ref target="#editor">#editor</ref>).
+        adiciones interlineales) se codifican mediante subst, anidando
+        del y add. El atributo resp distingue las intervenciones de la
+        autora (#autora) de las decisiones editoriales del equipo de
+        edición (#editor).
       </p>
       <p>
         Los guiones de corte de línea se marcan con el atributo
-        <att>break</att>="no" en el elemento <gi>lb</gi> que sigue a
-        la palabra partida, permitiendo reconstruir la palabra completa
-        en la vista de lectura regularizada sin alterar la fuente
-        diplomática.
+        break="no" en el elemento lb que sigue a la palabra partida,
+        permitiendo reconstruir la palabra completa en la vista de
+        lectura regularizada sin alterar la fuente diplomática.
       </p>
       <p>
-        La incertidumbre de lectura se marca con <gi>unclear</gi> y
-        el atributo <att>cert</att> (alto/medio/bajo); las pérdidas
-        materiales del soporte (rotos, manchas de tinta) se marcan
-        con <gi>gap</gi>.
+        La incertidumbre de lectura se marca con unclear y el atributo
+        cert, con tres niveles (high, medium, low); las pérdidas
+        materiales del soporte (rotos, manchas de tinta) se marcan con
+        gap.
       </p>
       <p>
         El documento se codifica en una única fuente XML-TEI de la
@@ -174,9 +188,11 @@
     <lb n='N004' break="no"/>cen verdaderamente tener algo de providencia-
     <lb n='N006' break="no"/>les, sucediome
                 <subst>
-                    <del>hara unos tres o cuatro años</del>
-    <lb n='N005' break="no"/><add place='above'>al salir de la universidad de Paris, en donde me eduqué</add>
-</subst>
+                    <del>hace unos tres o cuatro años</del>
+    <lb n='N005' break="no"/><add place='above'>al salir de la universidad
+       de <choice><orig>Paris</orig><reg resp="#editor">París</reg></choice>,
+      en donde me eduqué</add>
+</subst><reg>,</reg>
 
     <lb n='N007'/>una singularísima aventura.
 </p>
@@ -217,12 +233,12 @@ tanto <add place="inline">las</add> Grandes como peque-
     <lb n='N023' break="no"/>tices de <choice><sic>lo</sic><corr resp="#editor">la</corr></choice> cual no se tiene idea en el viejo
     <lb n='N024'/>mundo. Allí, aunque la vegetación es más
     <lb n='N025'/>armónica y más civilizada, por decirlo a-
-    <lb n='N026' break="no"/>sí, hasta en los sitios más agrestes<choice><sic>;</sic><corr resp="#editor">,</corr></choice> carece
+    <lb n='N026' break="no"/>sí, hasta en los sitios más agrestes<choice><orig>;</orig><corr resp="#editor">,</corr></choice> carece
     <lb n='N027'/>siempre de aquellos contrastes violentos y
     <lb n='N028'/>exhuberancia de vida y movimiento que
     <lb n='N029'/>encanta en el paisaje tropical.
     <lb n='N030'/>Después de haber recorrido la isla en mu-
-    <lb n='N031' break="no"/>chas direcciones<choice><sic></sic><corr resp="#editor">,</corr></choice> noté que me faltaba visitar
+    <lb n='N031' break="no"/>chas direcciones<reg>,</reg> noté que me faltaba visitar
 
 
 <pb n='5'/>
@@ -301,7 +317,7 @@ tanto <add place="inline">las</add> Grandes como peque-
 
 <p>
   <lb n='N001'/>Bajo una techumbre de árboles entrelazados
-  <lb n='N002'/>bajaba salteador y espumoso<choice><orig>,</orig><reg></reg></choice> un riachuelo que
+  <lb n='N002'/>bajaba salteador y espumoso<orig>,</orig> un riachuelo que
   <lb n='N003'/><choice><orig>corria</orig><reg>corría</reg></choice> por entre un lecho de rocas superpuestas y
   <lb n='N004'/>menudos quijarros. Entre las rocas que quedaban
   <lb n='N005'/>descubiertas y fuera del agua se habían forma-
@@ -388,12 +404,12 @@ tanto <add place="inline">las</add> Grandes como peque-
   <lb n='N012' break="no"/>jos, de cidros, guayabos y mameyes, todos ellos
   <lb n='N013'/>y cada uno perfectamente podados y cuidados,
   <lb n='N014'/>así como estaba limpia y recortada la menuda
-  <lb n='N015'/>yerba que <sic>crecia</sic> <choice><orig>á</orig><reg>a</reg></choice> sus pies. Apesar de la belle-
+  <lb n='N015'/>yerba que <choice><orig>crecia</orig><reg resp="#editor">crecía</reg></choice> <choice><orig>á</orig><reg>a</reg></choice> sus pies. Apesar de la belle-
   <lb n='N016' break="no"/>za del sitio y las señales de cultivo que respira-
   <lb n='N017' break="no"/>ba<del>n</del> aquel lugar<add place="inline" resp="#editor">,</add> reinaba en él un profundo y
   <lb n='N018'/><choice><orig>á</orig><reg>a</reg></choice> mi parecer <del>un</del> melancólico silencio, como si
   <lb n='N019'/>todo aquello se dirigiera más a los sentidos que
-  <lb n='N020'/><choice><sic>á el</sic><corr resp="#editor">al</corr></choice> alma.
+  <lb n='N020'/><choice><orig>á el</orig><corr resp="#editor">al</corr></choice> alma.
   </p>
 <p>
   <lb n='N021'/>Tomé por la alámeda que me pareció más
@@ -557,7 +573,7 @@ tanto <add place="inline">las</add> Grandes como peque-
   <lb n='N013'/>Ella me miraba sin contestar, pues no
   <lb n='N014'/>podia verme muy <choice><orig>á</orig><reg>a</reg></choice> las claras estando yo
   <lb n='N016'/>en el fondo<metamark><metamark function='insertion' rend='subscript:true;'>x</metamark></metamark> <lb n='N015'/> <add place="above">del aposento</add> y habiendo empezado ya oscu-
-  <lb n='N017'/>recer con aquella prontitud que caracteriza <choice><orig></orig><reg resp="#editor">a</reg></choice>
+  <lb n='N017'/>recer con aquella prontitud que caracteriza <choice><orig/><reg resp="#editor">a</reg></choice>
   <lb n='N018'/>los <choice><orig>paises</orig><reg resp="#editor">países</reg></choice> intertropicales.
 </p> 
 <p>
@@ -606,7 +622,7 @@ tanto <add place="inline">las</add> Grandes como peque-
   <lb n='N020'/><choice><orig>conversación, — eso no!</orig><reg resp="#editor">conversación— ¡eso no!</reg></choice> No crea <choice><expan>usted</expan><abbr>U.</abbr></choice> caballero que <choice><expan>usted</expan><abbr>U.</abbr></choice>
   <lb n='N021'/>trata con salvajes y gente de mal corazón. Le ase-
   <lb n='N022'/>guro <choice><orig>á</orig><reg>a</reg></choice> <choice><expan>usted</expan><abbr>U.</abbr></choice> que <choice><orig>tendrémos</orig><reg resp="#editor">tendremos</reg></choice> mucho gusto en darle a
-  <lb n='N023'/><choice><expan>usted</expan><abbr>U.</abbr></choice> albergue por esta noche. Sientese <choice><expan>usted</expan><abbr>U.</abbr></choice> <choice><orig></orig><reg>—</reg></choice>añadió, mi
+  <lb n='N023'/><choice><expan>usted</expan><abbr>U.</abbr></choice> albergue por esta noche. Sientese <choice><expan>usted</expan><abbr>U.</abbr></choice> <choice><orig/><reg>—</reg></choice>añadió, mi
   <lb n='N024' break="no"/>rando <choice><orig>á</orig><reg>a</reg></choice> su marido con una sonrisa forzada<choice><orig>,</orig><reg>—</reg></choice> y
   <lb n='N025'/>háblenos <choice><expan>usted</expan><abbr>U.</abbr></choice> del mundo y de lo que se dice en
   <lb n='N026'/>él de nuevo<choice><orig>;</orig><reg resp="#editor">,</reg></choice> en tanto que sirven la comida, cuya
@@ -962,7 +978,7 @@ tanto <add place="inline">las</add> Grandes como peque-
   <lb n='N013'/>El Doctor pasaba casi todas las horas de la
   <lb n='N014'/>mañana en las faenas agrícolas de su <hi rend="underline">ingenio</hi>,
   <lb n='N015'/>y por la tarde se encerraba en su laboratorio
-  <lb n='N016'/>sito <del>en</del> <choice><orig></orig><reg resp="#editor">a</reg></choice> una cuadra distante de la casa<choice><orig>;</orig><reg>.</reg></choice> <choice><orig>así</orig><reg>Así</reg></choice> los dos
+  <lb n='N016'/>sito <del>en</del> <choice><orig/><reg resp="#editor">a</reg></choice> una cuadra distante de la casa<choice><orig>;</orig><reg>.</reg></choice> <choice><orig>así</orig><reg>Así</reg></choice> los dos
   <lb n='N017'/>esposos <choice><orig>vivian</orig><reg>vivían</reg></choice> casi siempre separados durante
   <lb n='N018'/>el <choice><orig>dia</orig><reg>día</reg></choice> y solo se <choice><orig>reunian</orig><reg>reunían</reg></choice> por la noche desde
   <lb n='N019'/>la hora de la comida. Las relaciones entre sí
