@@ -16,7 +16,7 @@ title: Edición digital Elisa o los corazones solitarios
 email: juarris@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Edición digital SAS.
-baseurl: "/clasehumanidadesdigitales/Elisa-o-los-corazones-solitarios" # the subpath of your site, e.g. /blog
+baseurl: "/Elisa-o-los-corazones-solitarios" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
